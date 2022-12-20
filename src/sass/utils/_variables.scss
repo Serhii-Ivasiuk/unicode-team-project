@@ -1,0 +1,37 @@
+:root {
+    // Accent color used in buttons, menu hover, modal border, icon bg
+    --accent-clr: #F8D24E;
+    // BG colors
+    --bg-main-clr: #84A178;
+    --bg-secondary-clr: #FCFCFC;
+    --bg-product-one-clr: #AEC6A5;
+    --bg-product-one-clr-alpha: rgba(156, 190, 143, 0.7);
+    --bg-product-two-clr: #EFD478;
+    --bg-product-two-clr-alpha: rgba(248, 210, 78, 0.7);
+    --bg-product-three-clr: #D6936D;
+    --bg-product-three-clr-alpha: rgba(213, 117, 63, 0.7);
+    // Text variables
+    --text-main-clr: #131313;
+    --text-secondary-clr: #FCFCFC;
+    --text-contacts-clr: #D6936D;
+    --text-contacts-secondary-clr: #ABABAB;
+    --text-footer-clr: #7A7A7A;
+    --text-white-color: #FFFFFF;
+    --font-main: 'Montserrat';
+    --font-secondary: 'Seymour One';
+    // Modal colors
+    --input-border-clr: #84A178;
+    --input-bg-clr: rgba(248, 210, 78, 0.1);
+    // Menu colors
+    --mobile-menu-bg-clr:#85A279;
+    --tablet-menu-bg-clr: #97AF8D;
+    // Btn variables
+    --btn-text-clr: #000000;
+    --btn-hover-focus-bg-clr: #0A8817;
+    --btn-text-focus-clr: #FCFCFC;
+    --btn-disabled-clr: #ABABAB;
+    // Icon variables
+    --icon-black-clr: #000000;
+    --icon-socials-clr: #84A178;
+    --icon-hover-focus-clr: #FCFCFC;
+}
