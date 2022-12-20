@@ -1,0 +1,20 @@
+.header {
+    background-color: var(--bg-main-clr);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-link {
+    display: flex;
+    gap: 28px;
+    padding: 40px 0;
+
+}
