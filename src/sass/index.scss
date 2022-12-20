@@ -7,7 +7,9 @@
 @import './common/reset';
 @import './common/common';
 // components
+@import './components/buttons';
 @import './components/container';
+// sections
 @import './components/header';
 @import './components/hero';
 @import './components/products';
@@ -17,3 +19,5 @@
 @import './components/customer-reviews';
 @import './components/contacts';
 @import './components/footer';
+// menu
+@import './components/menu';
