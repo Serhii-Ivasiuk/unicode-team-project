@@ -6,7 +6,9 @@
 @import './common/reset';
 @import './common/common';
 // components
-@import './components/hero-header';
+@import './components/container';
+@import './components/header';
+@import './components/hero';
 @import './components/products';
 @import './components/about';
 @import './components/advantages';
