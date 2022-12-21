@@ -17,5 +17,43 @@
     <include src="./partials/customer-reviews.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="mobile-menu-logo">
+        <a href="#" class="logo link">logo</a>
+      </div>
+      <button class="menu-toggle-close js-close-menu">
+        <svg class="icon-close" width="32" height="32">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link--current" href="#">Home</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#about">How it’s made?</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#service">Our products</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="mobile-menu-btn">
+        Buy now
+        <svg class="icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-arrow-sm"></use>
+        </svg>
+      </button>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
