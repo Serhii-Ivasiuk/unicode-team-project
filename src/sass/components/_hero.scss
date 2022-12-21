@@ -1,6 +1,6 @@
 .hero__section {
   @include section(50px, 237px);
-    max-width: 480px;
+    max-width: 320px;
     background-color: var(--bg-main-clr);
     position: relative;
 }
