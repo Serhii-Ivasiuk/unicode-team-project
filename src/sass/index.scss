@@ -1,12 +1,15 @@
 // vendors
-
+@import './vendors/visually-hidden';
 // utils
 @import './utils/variables';
+@import './utils/mixin';
 // common
 @import './common/reset';
 @import './common/common';
 // components
+@import './components/buttons';
 @import './components/container';
+// sections
 @import './components/header';
 @import './components/hero';
 @import './components/products';
@@ -16,3 +19,5 @@
 @import './components/customer-reviews';
 @import './components/contacts';
 @import './components/footer';
+// mobile-menu
+@import './components/mobile-menu';
