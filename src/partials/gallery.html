@@ -1,39 +1,41 @@
 <section class="gallery">
-  <p hidden>test gallery</p>
-  <div class="gallery-thumb">
-    <picture>
-      <!--Dekstop screen-->
-      <source
-        media="(min-width:1200px)"
-        srcset="
-          ./images/gallery/img-1_1013.jpg 1x,
-          ./images/gallery/img-1_2026.jpg 2x
-        "
-      />
-      <!--Tablet screen-->
-      <source
-        media="(min-width:768px)"
-        srcset="
-          ./images/gallery/img-1_704.jpg  1x,
-          ./images/gallery/img-1_1408.jpg 2x
-        "
-      />
-      <!--Pnone screen-->
-      <source
-        media="(max-width:767px)"
-        srcset="
-          ./images/gallery/img-1_280.jpg 1x,
-          ./images/gallery/img-1_560.jpg 2x
-        "
-      />
-      <img
-        class="gallery-img"
-        src="./images/gallery/img-1_1013.jpg"
-        alt="ice-cream"
-        width="1013"
-        height="422"
-        loading="lazy"
-      />
-    </picture>
+  <div class="gallery-container">
+    <p hidden>gallery</p>
+    <div class="gallery-thumb">
+      <picture>
+        <!--Dekstop screen-->
+        <source
+          media="(min-width:1200px)"
+          srcset="
+            ./images/gallery/img-1_1013.jpg 1x,
+            ./images/gallery/img-1_2026.jpg 2x
+          "
+        />
+        <!--Tablet screen-->
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./images/gallery/img-1_704.jpg  1x,
+            ./images/gallery/img-1_1408.jpg 2x
+          "
+        />
+        <!--Pnone screen-->
+        <source
+          media="(max-width:767px)"
+          srcset="
+            ./images/gallery/img-1_280.jpg 1x,
+            ./images/gallery/img-1_560.jpg 2x
+          "
+        />
+        <img
+          class="gallery-img"
+          src="./images/gallery/img-1_1013.jpg"
+          alt="ice-cream"
+          width="1013"
+          height="422"
+          loading="lazy"
+        />
+      </picture>
+    </div>
   </div>
 </section>

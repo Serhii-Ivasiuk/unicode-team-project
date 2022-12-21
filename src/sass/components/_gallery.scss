@@ -1,16 +1,32 @@
 .gallery {
-  padding-bottom: 48px;
+  position: relative;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 140px;
+  }
 }
 
 .gallery-thumb {
-  position: relative;
-  top: -32px;
   margin: 0 auto;
-  max-width: 280px;
-  max-height: 130px;
-
   overflow: hidden;
-  border-radius: 8px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+    border-radius: 8px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 704px;
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1013px;
+    border-radius: 24px;
+  }
 }
-
-
