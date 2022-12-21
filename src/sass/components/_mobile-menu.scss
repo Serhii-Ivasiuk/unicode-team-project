@@ -8,28 +8,37 @@
   top: 16px;
   right: 20px;
 }
+
 .menu-toggle {
+  // *
+  // Код між * треба буде переписати під позиціонування в хедері. Рекомендую робити через флекс і align-items: center
   @media screen and (min-width: 768px) {
     position: inherit;
     top: 32px;
     right: 32px;
   }
+  // *
+
   @media screen and (min-width: 1200px) {
     display: none;
   }
 }
+
 .menu-toggle-close {
   @media screen and (min-width: 768px) {
     top: 32px;
     right: 32px;
   }
+
   @media screen and (min-width: 1200px) {
     display: none;
   }
 }
+
 .icon-close {
   fill: #ffff;
 }
+
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -39,35 +48,49 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 40px 40px;
+  padding: 100px 20px 64px;
   background-color: var(--mobile-menu-bg-clr);
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 
+  overflow-y: auto;
+
+  @media screen and (min-width: 768px) {
+    padding: 140px 32px 64px;
+  }
+
   @media screen and (min-width: 1200px) {
     display: none;
   }
 }
+
 .menu-container.is-open {
   transform: translateX(0);
 }
+
 .mobile-menu {
-  padding: 0;
-  margin-top: 51px;
-  margin-bottom: auto;
-  list-style: none;
+  margin-bottom: 64px;
   text-align: center;
 }
-.mobile-menu-item {
+
+.mobile-menu-item:not(:last-child) {
   margin-bottom: 32px;
 }
+
 .mobile-menu-link {
   font-weight: 700;
   font-size: 9vw;
   line-height: 1.21;
   letter-spacing: 0.02em;
   color: var(--text-secondary-clr);
+
+  @media screen and (min-width: 480px) {
+    font-size: 32px;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 48px;
+  }
 
   &--current {
     color: var(--text-main-clr);
@@ -83,13 +106,8 @@
       font-size: 48px;
     }
   }
-  @media screen and (min-width: 480px) {
-    font-size: 32px;
-  }
-  @media screen and (min-width: 480px) {
-    font-size: 48px;
-  }
 }
+
 .mobile-menu-logo {
   position: absolute;
   top: 12px;
@@ -98,8 +116,9 @@
     top: 20px;
   }
 }
+
 .mobile-menu-btn {
-  margin-bottom: 24px;
+  margin-top: auto;
   @media screen and (min-width: 768px) {
     display: none;
   }
