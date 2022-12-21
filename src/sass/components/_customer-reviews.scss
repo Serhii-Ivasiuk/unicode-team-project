@@ -38,7 +38,7 @@
   width: 202px;
   margin: 0;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
   font-size: 12px;
   line-height: 2.58;
 
@@ -54,7 +54,7 @@
 
   text-align: center;
 
-  color:var(--text-main-clr);
+  color: var(--text-main-clr);
 }
 .slick-dots li button {
   margin-bottom: 40px;
@@ -66,8 +66,8 @@
 .slick-dots li button:before {
   color: #84a178;
 }
-.slick-dots li button:disabled:before{
-  color:#D9D9D9;
+.slick-dots li button:disabled:before {
+  color: #d9d9d9;
 }
 .slick-dots li.slick-active button:before {
   opacity: 0;
