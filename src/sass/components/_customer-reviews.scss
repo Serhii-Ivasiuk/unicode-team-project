@@ -1,0 +1,75 @@
+.slider__container {
+  width: 320px;
+  margin: 0 auto;
+}
+.slider__thumb {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  border: 0.5px solid transparent;
+  border-radius: 44%;
+  /* background: #6E6E6E; */
+  width: 85px;
+
+  overflow: hidden;
+}
+.slider__list {
+  text-align: center;
+}
+.slider__content {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 280px;
+  /* padding-left: 39px; */
+  padding-top: 35px;
+  /* padding-right: 39px; */
+  padding-bottom: 35px;
+  background-color: var(--bg-main-clr);
+  border-radius: 10px;
+}
+// .slider__content > .slider__review{
+//    flex-grow: 1;
+// }
+.slider__review {
+  width: 202px;
+  margin: 0;
+  margin-left: auto;
+    margin-right: auto;
+  font-size: 12px;
+  line-height: 2.58;
+
+  text-align: center;
+
+  color: var(--btn-text-focus-clr);
+}
+.slider__text {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+
+  text-align: center;
+
+  color:var(--text-main-clr);
+}
+.slick-dots li button {
+  margin-bottom: 40px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg-main-clr);
+}
+.slick-dots li button:before {
+  color: #84a178;
+}
+.slick-dots li button:disabled:before{
+  color:#D9D9D9;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0;
+  color: #84a178;
+}
