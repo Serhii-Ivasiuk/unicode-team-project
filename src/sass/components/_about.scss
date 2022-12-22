@@ -75,7 +75,8 @@
   margin-bottom: 40px;
 
   &::after {
-    content: '';
+    z-index: 100;
+    content: ' ';
     width: 280px;
     height: 280px;
 
