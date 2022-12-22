@@ -2,4 +2,18 @@
 
 body {
   font-family: var(--font-main);
+  // background-color: #b6b6b6;
+  background-image: url('../images/background/lg@1x.jpg');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background/lg@2x.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+
+    background-attachment: fixed;
+}
 }

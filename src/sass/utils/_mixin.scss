@@ -19,7 +19,7 @@
     font-weight: $fw;
   }
   @if $lh {
-    line-height: $lh / $fs;
+    line-height: calc($lh / $fs);
   }
   @if $ls {
     letter-spacing: $ls;
@@ -52,6 +52,6 @@
 
 @mixin transition($property...) {
   transition-property: $property;
-  transition-duration: $transition-time;
-  transition-timing-function: $transition-cubic;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-cubic);
 }
