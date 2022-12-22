@@ -11,24 +11,22 @@ $breacpoints: (
   margin-left: auto;
   margin-right: auto;
 
-
-    // phone screen
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-
-    // tablet
-    @media screen and (min-width: 768px) {
-      width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-
-    // decktop
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-      padding-left: 16px;
-      padding-right: 16px;
-    }
+  // phone screen
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 
+  // tablet
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  // decktop
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
