@@ -33,15 +33,19 @@
 }
 
 //  Flex
-@mixin flex($dsp: false, $jc: false, $ai: false, $fw: false) {
+@mixin flex($dsp: false, $jc: false, $ai: false, $fd: false, $fw: false) {
   @if $dsp {
     display: $dsp;
   }
+  
   @if $jc {
     justify-content: $jc;
   }
   @if $ai {
     align-items: $ai;
+  }
+  @if $fd {
+    flex-direction: $fd;
   }
   @if $fw {
     flex-wrap: $fw;
