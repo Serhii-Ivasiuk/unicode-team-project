@@ -1,0 +1,40 @@
+.hero__section {
+  @include section(50px, 237px);
+    max-width: 320px;
+    background-color: var(--bg-main-clr);
+    position: relative;
+}
+
+.hero__title {
+  @include fonts(26px, 33px, 400, 0.04em, uppercase, var(--text-secondary-clr));
+  font-family: var(--font-secondary);
+  margin-bottom: 32px;
+
+  &--lg {
+    font-size: 34px;
+  }
+}
+
+.hero__container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__list {
+  display: flex;
+  gap: 12px;
+}
+
+.hero__img-dots {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.hero__img-cone {
+  position: absolute;
+  left: 83px;
+  bottom: 0;
+}
