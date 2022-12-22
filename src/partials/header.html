@@ -1,9 +1,37 @@
-<button
-  class="menu-toggle js-open-menu"
-  aria-expanded="false"
-  aria-controls="mobile-menu"
->
-  <svg width="32" height="32">
-    <use href="./images/icons.svg#icon-menu"></use>
-  </svg>
-</button>
+<header class="header">
+  <div class="container header-container">
+    <div class="logo-wrap">
+      <a href="#" class="logo">
+        <img 
+        srcset="./images/logo/sm_19.png 19w,
+                ./images/logo/sm_38.png 38w,
+                ./images/logo/md_22.png 22w,
+                ./images/logo/md_44.png 44w,
+                ./images/logo/lg_28.png 28w,
+                ./images/logo/lg_56.png 56w"
+                sizes="(min-width: 1200px) 28px, (min-width: 768px) 22px, (min-width: 320px) 19px, (max-width: 320px) 19px"
+        src="./images/logo/sm_19.png" alt="Logo">
+        <span lang="en" class="logo-text">ce</span>
+      </a>
+    </div>
+    <nav class="navigation">
+      <ul class="nav-list list">
+        <li><a href="#" class="nav-link link">Home</a></li>
+        <li><a href="#advantages" class="nav-link link">How it’s made?</a></li>
+        <li><a href="#products" class="nav-link link">Our products</a></li>
+        <li><a href="#contacts" class="nav-link link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="32" height="32">
+        <use href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <div class="btn-wrap">
+      <button type="button" class="header-btn">Buy now</button>
+    </div>
+
+  </div>
+</header>
