@@ -19,7 +19,7 @@
     font-weight: $fw;
   }
   @if $lh {
-    line-height: $lh / $fs;
+    line-height: calc($lh / $fs);
   }
   @if $ls {
     letter-spacing: $ls;
