@@ -1,18 +1,16 @@
 .hero__section {
   @include section(50px, 237px);
-    max-width: 320px;
+    max-width: 1200px;
     background-color: var(--bg-main-clr);
     position: relative;
-}
 
-.hero__title {
-  @include fonts(26px, 33px, 400, 0.04em, uppercase, var(--text-secondary-clr));
-  font-family: var(--font-secondary);
-  margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      @include section(14px, 176px);
+    }
 
-  &--lg {
-    font-size: 34px;
-  }
+    @media screen and (min-width: 1200px) {
+      @include section(45px, 103px);
+    }
 }
 
 .hero__container {
@@ -20,11 +18,59 @@
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+  width: 100vw;
+  
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+}
+
+.hero__title {
+  @include fonts(26px, 33px, 400, 0.04em, uppercase, var(--text-secondary-clr));
+  font-family: var(--font-secondary);
+  margin-bottom: 32px;
+  max-width: 247px;
+
+  &--lg {
+    font-size: 34px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 367px;
+    font-size: 38px;
+    line-height: 48px;
+  }
 }
 
 .hero__list {
   display: flex;
   gap: 12px;
+}
+
+.hero__overlay {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  height: 100%;
+
+  @media screen and (min-width: 768px){
+    width: 768px;
+  }
+        @media screen and (min-width: 1200px) {
+          width: 1200px;
+        }
 }
 
 .hero__img-dots {
@@ -35,6 +81,11 @@
 
 .hero__img-cone {
   position: absolute;
-  left: 83px;
+  right: 60px;
   bottom: 0;
+  z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    right: 92px;
+  }
 }
