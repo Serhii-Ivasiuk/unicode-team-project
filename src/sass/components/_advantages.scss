@@ -1,42 +1,51 @@
 .advantages {
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: var(--bg-main-clr);
-}
-
-.advantages__box {
   padding-bottom: 64px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
 
   @media screen and (min-width: 768px) {
     padding-bottom: 204px;
-    width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-right: 16px;
-    padding-left: 16px;
     padding-bottom: 178px;
-    width: 1200px;
+  }
+}
+.advantages__container {
+  padding-left: 45px;
+  padding-right: 45px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 76px;
+    padding-right: 76px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 .advantages__list {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
   }
 }
 
 .advantages__item {
-  width: calc((100% - 30px * (1 - 1)) / 1);
-  margin: 0 auto;
+  // margin: 0 auto;
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 30px * (3 - 1)) / 3);
+    flex-basis: calc((100% - 80px * (3 - 1)) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 32px * (3 - 1)) / 3);
   }
 }
 
@@ -56,7 +65,7 @@
   margin: 0 auto 16px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: center;
+  background-size: 36px 36px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
@@ -119,24 +128,22 @@
 }
 
 .advantages__text {
-  width: 230px;
   display: block;
   font-weight: 700;
   font-size: 12px;
   line-height: calc(20 / 12);
   text-align: center;
   color: var(--text-secondary-clr);
-  margin: 0 auto;
 
   @media screen and (min-width: 768px) {
-    width: 152px;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
+    // padding-left: 15px;
+    // padding-right: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 368px;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(28 / 16);
