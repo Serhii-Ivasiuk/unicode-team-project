@@ -13,15 +13,11 @@
   position: inherit;
   display: flex;
   align-items: center;
-  // *
-  // Код між * треба буде переписати під позиціонування в хедері. Рекомендую робити через флекс і align-items: center
+
   @media screen and (min-width: 768px) {
-    // position: inherit;
-    // top: 32px;
-    // right: 32px;
+
     margin-right: 32px;
   }
-  // *
 
   @media screen and (min-width: 1200px) {
     display: none;
