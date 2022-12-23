@@ -111,6 +111,11 @@
   right: 60px;
   bottom: 0;
   z-index: 2;
+  animation-name: scale;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  transform-origin: bottom center;
 
   @media screen and (min-width: 768px) {
     right: 92px;
@@ -250,5 +255,27 @@
 
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(80%);
+  }
+
+  25% {
+    transform: scale(120%)
+  }
+
+  50% {
+    transform: scale(80%);
+  }
+
+  75% {
+    transform: scale(120%)
+  }
+
+  100% {
+    transform: scale(100%);
   }
 }
