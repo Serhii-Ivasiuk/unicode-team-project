@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,EAAE,gBAAgBC,MAAM,CACtBC,MAAM,EACNC,UAAW","sources":["src/js/slick-slider.js"],"sourcesContent":["$('.single-item').slick({\n  dots: true,\n  dotsClass: 'my-dots',\n});\n"],"names":["$","slick","dots","dotsClass"],"version":3,"file":"index.88aa39a0.js.map"}
