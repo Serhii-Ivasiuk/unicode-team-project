@@ -7,21 +7,56 @@
       <li><a class="hero__link-products" href="">Products</a></li>
       <li><a class="hero__link-how" href="">How it’s made?</a></li>
     </ul>
-    <img
-      class="hero__img-dots"
-      srcset="./images/hero/img-3_320.png 1x, ./images/hero/img-3_640.png 2x"
-      src="./images/hero/img-3_320.png"
-      alt="Yellow dots background"
-      width="320"
-      height="49"
-    />
-    <img
+
+    <!-- <picture>
+      <source
+        srcset="./images/hero/img-3_768.png 1x, ./images/hero/img-3_1536.png 2x"
+        media="(min-width: 768px)"
+      />
+    </picture> -->
+
+    <!-- <img
       class="hero__img-cone"
       srcset="./images/hero/img-1_177.png 1x, ./images/hero/img-1_354.png 2x"
       src="./images/hero/img-1_177.png"
       alt="Ice-cream cone"
       width="177"
       height="217"
-    />
+    /> -->
+  </div>
+  <div class="hero__overlay">
+    <picture class="hero__img-dots">
+      <source
+        srcset="
+          ./images/hero/img-3_1200.png 1x,
+          ./images/hero/img-3_2400.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="./images/hero/img-3_768.png 1x, ./images/hero/img-3_1536.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/hero/img-3_320.png 1x, ./images/hero/img-3_640.png 2x"
+        media="(max-width: 767px)"
+      />
+      <img src="./images/hero/img-3_320.png" alt="Yellow dots background" />
+    </picture>
+    <picture class="hero__img-cone">
+      <source
+        srcset="./images/hero/img-1_456.png 1x, ./images/hero/img-1_912.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="./images/hero/img-1_268.png 1x, ./images/hero/img-1_536.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/hero/img-1_177.png 1x, ./images/hero/img-1_354.png 2x"
+        media="(max-width: 767px)"
+      />
+      <img src="./images/hero/img-1_177.png" alt="Ice-cream cone" />
+    </picture>
   </div>
 </section>

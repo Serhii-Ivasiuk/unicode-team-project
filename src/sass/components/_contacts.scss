@@ -57,21 +57,17 @@
 
   margin-bottom: 20px;
 
+
   font-size: 12px;
   line-height: 1.66;
   letter-spacing: 0.04em;
   color: var(--text-main-clr);
+
   background: var(--accent-clr);
   border-radius: 4px;
 }
 
-.contacs-location__title {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-  letter-spacing: 0.04em;
-  color: var(--text-main-clr);
-}
+
 
 .contacs-location__link {
   font-size: 12px;
@@ -95,6 +91,7 @@
   color: #131313;
 }
 
+
 // btn
 .contacts-btn {
   justify-content: center;
@@ -107,4 +104,5 @@
 
 .contacts-btn__item {
   padding-bottom: 16px;
+
 }
