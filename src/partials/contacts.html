@@ -6,7 +6,10 @@
       <!-- Card 1 -->
       <li class="contacs-location">
         <p class="contacts-card__title">CAFE</p>
-        <div class="contacts-location__groop">
+
+        <div class="contacts-location__groop line">
+
+
           <p class="contacs-location__title">Chicago</p>
           <address>
             <a
@@ -20,7 +23,8 @@
         </div>
 
 
-        <div class="contacts-location__groop">
+        <div class="contacts-location__groop line">
+
           <p class="contacs-location__title">Monday - Friday</p>
           <p class="contacs-location__time">08:00 AM - 16:00 PM</p>
           <p class="contacs-location__title">Saturday - Sunday</p>
@@ -41,7 +45,10 @@
       <!-- Card 2 -->
       <li class="contacs-location">
         <p class="contacts-card__title">FOODTRUCK</p>
-        <div class="contacts-location__groop">
+
+        <div class="contacts-location__groop line">
+
+
           <p class="contacs-location__title">Los Angeles</p>
           <address>
             <a
@@ -54,7 +61,9 @@
           </address>
         </div>
 
-        <div class="contacts-location__groop">
+
+        <div class="contacts-location__groop line">
+
           <p class="contacs-location__title">Monday - Friday</p>
           <p class="contacs-location__time">08:00 AM - 16:00 PM</p>
           <p class="contacs-location__title">Saturday - Sunday</p>
@@ -74,8 +83,9 @@
       <!-- Card 3 -->
 
       <li class="contacs-location">
-        <p class="contacts-card__title">Cafe</p>
-        <div class="contacts-location__groop">
+
+        <p class="contacts-card__title">CAFE</p>
+        <div class="contacts-location__groop line">
           <p class="contacs-location__title">New York</p>
           <address>
             <a
@@ -87,8 +97,8 @@
             >
           </address>
         </div>
+        <div class="contacts-location__groop line">
 
-        <div class="contacts-location__groop">
           <p class="contacs-location__title">Monday - Friday</p>
           <p class="contacs-location__time">08:00 AM - 16:00 PM</p>
           <p class="contacs-location__title">Saturday - Sunday</p>
@@ -110,13 +120,26 @@
     <!-- Buttons -->
     <ul class="contacts-btn">
       <li class="contacts-btn__item">
-        <button class="contacts-btn__btn" type="button">
-          <span class="contacts-btn__text">Our Locations</span>
+        <button
+          class="btn btn--with-icon btn--with-bg btn--with-bg-sm js-open-modal" data-modal="location"
+          type="button"
+        >
+          <span class="contacts-btn__text ">Our Locations</span>
+          <svg class="btn__icon icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-arrow-sm"></use>
+          </svg>
         </button>
       </li>
       <li class="contacts-btn__item">
-        <button class="contacts-btn__btn" type="button">
+        <button
+          class="btn btn--with-icon btn--with-bg btn--with-bg-sm js-open-modal" data-modal="franchise"
+          type="button"
+        >
           <span class="contacts-btn__text">Franchise</span>
+          <svg class="btn__icon icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-arrow-sm"></use>
+          </svg>
+
         </button>
       </li>
     </ul>
