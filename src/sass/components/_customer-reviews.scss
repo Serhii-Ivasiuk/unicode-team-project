@@ -1,22 +1,26 @@
+.slider {
+  margin-bottom: 39px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1268px) {
+    margin-bottom: 138px;
+  }
+}
 .slider__container {
-  // width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
 
   @media screen and (max-width: 479px) {
-    min-width: 320px;
+    min-width: 280px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 705px;
   }
   @media screen and (min-width: 1268px) {
     width: 1013px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
 }
 .slider__title {
@@ -33,23 +37,25 @@
 
   overflow: hidden;
 }
-.slider__list {
-  text-align: center;
-}
-.slider__list > .slider__wrapper {
-  flex-grow: 1;
-}
-.slider__wrapper {
+
+.slider__review {
   display: flex;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 32px;
-  // width: 280px;
-  // padding-left: 39px;
+
+  padding-left: 39px;
   padding-top: 35px;
-  // padding-right: 39px;
+  padding-right: 39px;
   padding-bottom: 35px;
+
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
   background-color: var(--bg-main-clr);
   border-radius: 10px;
+  color: var(--text-secondary-clr);
 
   @media screen and (max-width: 479px) {
     min-width: 280px;
@@ -57,34 +63,11 @@
 
   @media screen and (min-width: 768px) {
     width: 705px;
+    height: 138px;
     padding-left: 80px;
-    padding-top: 43px;
-    padding-right: 80px;
-    padding-bottom: 41px;
-  }
-  @media screen and (min-width: 1268px) {
-    width: 968px;
-    padding-left: 74px;
     padding-top: 28px;
-    padding-right: 74px;
-    padding-bottom: 29px;
-  }
-}
-
-.slider__review {
-  display: flex;
-
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 12px;
-  line-height: 2.58;
-
-  text-align: center;
-
-  color: var(--text-secondary-clr);
-
-  @media screen and (min-width: 768px) {
+    padding-right: 80px;
+    padding-bottom: 28px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1, 86;
@@ -92,11 +75,15 @@
     letter-spacing: 0.04em;
   }
   @media screen and (min-width: 1268px) {
+    width: 968px;
+    padding-left: 74px;
+    padding-top: 28px;
+    padding-right: 74px;
+    padding-bottom: 28px;
     font-size: 16px;
   }
 }
 .slider__text {
-  /* margin-bottom: 12px; */
   font-weight: 500;
   font-size: 20px;
   line-height: 1.86;
@@ -110,79 +97,18 @@
   }
 }
 
-// .slick-dots li {
-//   position: relative;
-//   display: inline-block;
-//   width: 12px;
-//   height: 12px;
-//   margin: 0 5px;
-//   padding: 0;
-//   cursor: pointer;
-// }
-// .slick-dots li button {
-//   font-size: 0;
-//   line-height: 0;
-//   display: block;
-//   width: 12px;
-//   height: 12px;
-//   padding: 5px;
-//   cursor: pointer;
-//   color: transparent;
-//   border: 0;
-//   outline: none;
-//   background: transparent;
-// }
-
-// .slick-dots li.slick-active button:before {
-
-//   color: #84a178;
-// }
-
-// .slick-dots li button:before {
-//   font-family: 'slick';
-//   font-size: 12px;
-//   line-height: 20px;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 12px;
-//   height: 12px;
-//   content: '•';
-//   text-align: center;
-
-//   color: #d9d9d9;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
-// .slick-next:before {
-//   content: ' ';
-// }
-// .slick-prev:before,
-// .slick-next:before {
-//   font-family: 'slick';
-//   font-size: 20px;
-//   line-height: 1;
-//   opacity: 0.75;
-//   color: transparent;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
-// .slick-list {
-//   position: relative;
-//   display: block;
-//   overflow: hidden;
-//   margin: 0;
-//   padding: 0;
-// }
-
 .my-dots {
   position: absolute;
-  bottom: -45px;
+  bottom: -12px;
   display: block;
   width: 100%;
   padding: 0;
   list-style: none;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    bottom: -32px;
+  }
 }
 
 .my-dots li {
@@ -206,7 +132,7 @@
   color: #d9d9d9;
   border: 0;
   outline: none;
-  background: #d9d9d9;
+  background: transparent;
 }
 
 .my-dots li button:hover,
@@ -232,7 +158,7 @@
   height: 12px;
   content: '•';
   text-align: center;
-  opacity: 0.25;
+  opacity: 1;
   color: #d9d9d9;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
