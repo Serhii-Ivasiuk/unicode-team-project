@@ -104,6 +104,11 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  animation-name: opacity;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  transform-origin: bottom center;
 }
 
 .hero__img-cone {
@@ -277,5 +282,15 @@
 
   100% {
     transform: scale(100%);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
   }
 }
