@@ -2,18 +2,40 @@
 
 body {
   font-family: var(--font-main);
-  // background-color: #b6b6b6;
-  background-image: url('../images/background/lg@1x.jpg');
+  color: var(--text-main-clr);
 
+  // Page background-image
+  // Mobile screen
+  background-image: url('../images/background/sm@1x.jpg');
+  background-size: 100%;
+  background-position: top;
+  background-attachment: fixed;
+  // Retina mobile screen
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/background/lg@2x.jpg);
+    background-image: url(../images/background/sm@2x.jpg);
+  }
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat-y;
+  // Tablet screen
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background/md@1x.jpg);
+    // Retina tablet screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/md@2x.jpg);
+    }
+  }
 
-    background-attachment: fixed;
-}
+  // Desktop screen
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/background/lg@1x.jpg);
+    // Retina desktop screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/lg@2x.jpg);
+    }
+  }
 }
