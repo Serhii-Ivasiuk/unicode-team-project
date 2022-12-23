@@ -26,7 +26,6 @@
           font-size: 38px;
             line-height: calc(48 / 38);
     }
-
   }
 
     @media screen and (min-width: 768px) {
@@ -46,9 +45,6 @@
   gap: 12px;
   align-items: baseline;
 
-  @media screen and (min-width: 768px) {
-    
-  }
 }
 
 .hero__link-products, .hero__link-how {
@@ -86,6 +82,120 @@
     }
 }
 
+.hero__overlay {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  height: 100%;
+
+  @media screen and (min-width: 768px){
+    width: 768px;
+  }
+        @media screen and (min-width: 1200px) {
+          width: 1200px;
+        }
+}
+
+.hero__img-dots {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  animation-name: opacity;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  transform-origin: bottom center;
+}
+
+.hero__img-cone {
+  position: absolute;
+  right: 60px;
+  bottom: 0;
+  z-index: 2;
+  animation-name: scale;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  transform-origin: bottom center;
+
+  @media screen and (min-width: 768px) {
+    right: 92px;
+  }
+}
+
+.hero__img-ice-cream {
+  position: absolute;
+  left: 32px;
+  bottom: 12px;
+  z-index: 2;
+  animation-name: spin;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 3;
+  
+    @media screen and (min-width: 1200px) {
+      left: 16px;
+      bottom: 65px;
+    }
+
+    @media screen and (max-width: 767px){
+      display: none;
+    }
+}
+
+.hero__stats {
+  position: absolute;
+  z-index: 3;
+  right: 32px;
+  bottom: 205px;
+
+  @media screen and (min-width: 1200px) {
+    right: 16px;
+    bottom: 368px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__stats-item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
+}
+
+.hero__stats-number {
+  @include fonts(28px, 34px, 900, 0.04em, uppercase, var(--text-main-clr));
+  text-align: right;
+  display: block;
+  margin-bottom: 4px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 46px;
+      line-height: calc(56 / 46);
+    }
+}
+
+.hero__stats-text {
+  font-weight: 400;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+    text-align: right;
+    color: var(--text-secondary-clr);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
+}
+
 .hero__details {
   // @include fonts(12px, 17px, 400, false, var(--text-secondary-clr));
   position: absolute;
@@ -118,7 +228,11 @@
 
   &::marker {
     display: none;
-  };
+  }
+
+  &::-webkit-details-marker {
+    display: none;
+  }
 
   &::after {
     content: '';
@@ -133,42 +247,50 @@
     background-image: url("data:image/svg+xml,%3Csvg width='41' height='16' viewBox='0 0 41 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z' fill='%23FCFCFC'/%3E%3C/svg%3E");
     background-size: contain;
   }
-  
-  
-
 }
 
-.hero__overlay {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-  height: 100%;
-
-  @media screen and (min-width: 768px){
-    width: 768px;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-        @media screen and (min-width: 1200px) {
-          width: 1200px;
-        }
+
+  50% {
+    transform: rotate(360deg)
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
-.hero__img-dots {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+@keyframes scale {
+  0% {
+    transform: scale(80%);
+  }
+
+  25% {
+    transform: scale(120%)
+  }
+
+  50% {
+    transform: scale(80%);
+  }
+
+  75% {
+    transform: scale(120%)
+  }
+
+  100% {
+    transform: scale(100%);
+  }
 }
 
-.hero__img-cone {
-  position: absolute;
-  right: 60px;
-  bottom: 0;
-  z-index: 2;
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
 
-  @media screen and (min-width: 768px) {
-    right: 92px;
+  100% {
+    opacity: 100;
   }
 }
