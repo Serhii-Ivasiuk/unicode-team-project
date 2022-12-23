@@ -55,3 +55,9 @@
   fill: #444;
   cursor: pointer;
 }
+.modal-form-wrapper__field:not(:placeholder-shown):invalid:required {
+  outline-color: rgb(234, 31, 0);
+}
+.modal-form-wrapper__field:valid:required {
+  outline-color: rgb(47, 167, 0);
+}

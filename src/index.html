@@ -140,8 +140,8 @@
               id="user_name"
               required
               placeholder="Name"
-              pattern="[a-z]{1,15}"
-              title="Username should only contain lowercase letters. e.g. john"
+              pattern="[a-z]{1,30}"
+              title="Username should only contain lowercase english letters. e.g. john"
             />
           </div>
           <label class="modal-form__label" for="user_phone"></label>
@@ -166,7 +166,12 @@
             placeholder="Comment"
           ></textarea>
         </div>
-        <button class="" type="submit">Submit</button>
+        <button
+          class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
+          type="button"
+        >
+          <span class="btn__text">Submit</span>
+        </button>
       </form>
     </div>
     <div class="modal modal-franchise" data-modal="franchise">
@@ -194,20 +199,20 @@
           <label class="modal-form__label" for="user_name"></label>
           <div class="modal-form-wrapper">
             <input
-              class="modal-form-wrapper-fr__field"
+              class="modal-form-wrapper__field"
               type="text"
               name="user_name"
               id="user_name"
               required
               placeholder="Name"
-              pattern="[a-z]{1,15}"
-              title="Username should only contain lowercase letters. e.g. john"
+              pattern="[a-z]{1,30}"
+              title="Username should only contain lowercase english letters. e.g. john"
             />
           </div>
           <label class="modal-form__label" for="user_phone"></label>
           <div class="modal-form-wrapper">
             <input
-              class="modal-form-wrapper-fr__field"
+              class="modal-form-wrapper__field"
               type="tel"
               name="user_phone"
               id="user_phone"
@@ -220,7 +225,7 @@
           <label class="modal-form__label" for="user_mail"></label>
           <div class="modal-form-wrapper">
             <input
-              class="modal-form-wrapper-fr__field"
+              class="modal-form-wrapper__field"
               type="email"
               name="user_mail"
               id="user_mail"
@@ -239,7 +244,12 @@
             placeholder="Comment"
           ></textarea>
         </div>
-        <button class="" type="submit">Submit</button>
+        <button
+          class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
+          type="button"
+        >
+          <span class="btn__text">Submit</span>
+        </button>
       </form>
     </div>
     <div class="modal modal-location" data-modal="location">
@@ -281,7 +291,7 @@
         />
       </picture>
       <a
-        class="modal-location__anker"
+        class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
         href="https://goo.gl/maps/uUSggjNBHGQR7PYW9"
         target="_blank"
         rel="noopener noreferrer nofollow"
