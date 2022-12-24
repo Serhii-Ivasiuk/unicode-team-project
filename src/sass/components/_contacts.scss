@@ -94,6 +94,7 @@
   margin-bottom: 20px;
 
   font-size: 12px;
+  font-weight: 500;
   line-height: 1.66;
   letter-spacing: 0.04em;
   color: var(--text-main-clr);
@@ -117,6 +118,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
   color: var(--text-main-clr);
 
   @media screen and(min-width:768px) {
@@ -133,6 +135,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
   color: var(--text-main-clr);
   margin-bottom: 8px;
 
@@ -152,6 +155,7 @@
 .contacs-location__link {
   font-size: 12px;
   line-height: 1.83;
+  font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--text-contacts-clr);
   &:hover,
@@ -170,6 +174,7 @@
 
 .contacs-location__time {
   font-size: 12px;
+  font-weight: 500;
   line-height: 1.83;
   color: var(--btn-disabled-clr);
 
@@ -190,10 +195,15 @@
   }
 }
 
+.contacts-location__phone {
+  margin-bottom: 4px;
+}
+
 .contacts-location__phone,
 .contacts-location__mail {
   display: block;
   font-size: 12px;
+  font-weight: 500;
   line-height: 1.58;
 
   color: var(--text-main-clr);
