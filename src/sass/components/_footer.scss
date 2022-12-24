@@ -4,37 +4,80 @@
 }
 
 .footer__container {
-  @include flex(flex, false, false, column);
-  padding-left: 20px;
-  padding-right: 20px;
+  @include flex(flex, false, false);
+  flex-direction: column;
 }
 
 .footer__tumb {
-  @include flex(flex, false, false, column);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+  }
+}
+
+.footer__text {
+  @include flex(flex, false, false);
+  flex-direction: column;
   gap: 16px;
 
   @media screen and (max-width: 767px) {
     width: 280px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 352px;
+    gap: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 504px;
+    gap: 14px;
+  }
 }
 
 .footer__title {
   @include fonts(18px, 22px, 700, 0.1em, uppercase, var(--text-secondary-clr));
+
+  @media screen and (min-width: 768px) {
+    @include fonts(26px, 32px, 700, 0.04em);
+  }
+  @media screen and (min-width: 1200px) {
+    @include fonts(30px, 37px, 400, 0.04em);
+  }
 }
 
 .footer__title-accent {
   @include fonts(34px, 41px, 700, 0.04em, uppercase, var(--text-secondary-clr));
+
+  @media screen and (min-width: 768px) {
+    @include fonts(48px, 59px, 700, 0.06em);
+  }
+  @media screen and (min-width: 1200px) {
+    @include fonts(58px, 71px, 700, 0.04em);
+  }
 }
 
 .footer-socials {
+  display: flex;
+  flex-direction: column;
   padding-top: 60px;
-  padding-bottom: 20px;
-  margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 18px;
+  }
 }
 
 .footer-socials__list {
-  @include flex(flex, center, center);
+  display: flex;
   gap: 20px;
+  margin-left: auto;
 }
 
 .footer-socials__item {
@@ -66,17 +109,36 @@
 }
 
 .footer-communication {
+  display: flex;
+  padding-top: 20px;
+  gap: 3px;
   margin-left: auto;
-  text-align: right;
-  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
 }
 
 .footer-communication_text {
   @include fonts(12px, 22px, 700, 0.04em, false, var(--text-main-clr));
+
+  @media screen and (min-width: 768px) {
+    @include fonts(14px, 26px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include fonts(16px, 30px, false, 0.02em);
+  }
 }
 
 .footer-communication__contacts {
   @include fonts(12px, 22px, 700, 0.04em, false, var(--text-secondary-clr));
+
+  @media screen and (min-width: 768px) {
+    @include fonts(14px, 26px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include fonts(16px, 30px, false, 0.02em);
+  }
 }
 
 .foter-info {
@@ -86,5 +148,13 @@
 }
 
 .foter-info_text {
-  @include fonts(14px, 21px, 700, 0.04em, false, var(--text-main-clr));
+  @include fonts(14px, 21px, 700, 0.04em, false, var(--text-footer-clr));
+
+  @media screen and (min-width: 768px) {
+    display: inline;
+    @include fonts(14px, 26px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include fonts(12px, 32px, false, 0.02em);
+  }
 }
