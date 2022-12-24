@@ -1,9 +1,44 @@
 <header class="header">
   <div class="container header-container">
     <a href="./index.html" class="logo">
-      <svg class="logo__icon" width="40" height="37">
+
+      <!-- <svg class="logo__icon" width="40" height="37">
         <use href="../src/images/icons.svg#icon-logo"></use>
-      </svg>
+      </svg> -->
+
+      <!-- <img srcset="../src/images/logo/logo-40.png 40w,
+                   ../src/images/logo/logo-48.png 48w,
+                   ../src/images/logo/logo-60.png 60w,
+                   ../src/images/logo/logo-80.png 80w,
+                   ../src/images/logo/logo-96.png 96w,
+                   ../src/images/logo/logo-120.png 120w
+        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 320px) 40px, 100vw"
+        src="../src/images/logo/logo-40.png" 
+        alt="Logo" 
+        loading="lazy" 
+        width="40" 
+        height="37" 
+      /> -->
+
+      <picture>
+        <source media="(min-width: 1200px)" srcset="
+                          ../src/images/logo/logo-60.png 1x,
+                          ../src/images/logo/logo-120.png 2x
+                        " type="image/png" />
+
+        <source media="(min-width: 768px)" srcset="
+                          ../src/images/logo/logo-48.png 1x,
+                          ../src/images/logo/logo-96.png 2x
+                        " type="image/png" />
+
+        <source media="(max-width: 767px)" srcset="
+                          ../src/images/logo/logo-40.png 1x,
+                          ../src/images/logo/logo-80.png 2x
+                        " type="image/png" />
+        <img src="../src/images/logo/logo-40.png" alt="Logo" loading="lazy" />
+      </picture>
+
+
     </a>
 
     <nav class="navigation">
