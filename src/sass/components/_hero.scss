@@ -232,6 +232,7 @@
   position: absolute;
   z-index: 3;
   display: block;
+  cursor: pointer;
   // marker: none;
 
   &::marker {
@@ -276,19 +277,19 @@
 
 @keyframes scale {
   0% {
-    transform: scale(80%);
+    transform: scale(90%);
   }
 
   25% {
-    transform: scale(120%)
+    transform: scale(110%)
   }
 
   50% {
-    transform: scale(80%);
+    transform: scale(95%);
   }
 
   75% {
-    transform: scale(120%)
+    transform: scale(110%)
   }
 
   100% {
