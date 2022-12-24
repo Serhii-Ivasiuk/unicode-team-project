@@ -15,36 +15,32 @@
   @media screen and (max-width: 767px) {
     padding-right: 20px;
     padding-left: 20px;
-    min-height: 130px;
+
     background-image: linear-gradient(
       to bottom,
-      var(--bg-main-clr) 25%,
-      transparent 25%,
-      transparent 75%
+      var(--bg-main-clr) 32px,
+      transparent 32px
     );
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-right: 32px;
     padding-left: 32px;
-    min-height: 327px;
+
     background-image: linear-gradient(
       to bottom,
-      var(--bg-main-clr) 44%,
-      transparent 44%,
-      transparent 56%
+      var(--bg-main-clr) 144px,
+      transparent 144px
     );
   }
   @media screen and (min-width: 1200px) {
     padding-right: 93px;
     padding-left: 93px;
-    min-height: 422px;
 
     background-image: linear-gradient(
       to bottom,
-      var(--bg-main-clr) 23%,
-      transparent 23%,
-      transparent 77%
+      var(--bg-main-clr) 100px,
+      transparent 100px
     );
   }
 }
