@@ -6,7 +6,7 @@
     @include section(60px, 86px);
   }
   @media screen and (min-width: 1200px) {
-    @include section(60px, 99px);
+    @include section(60px, 100px);
   }
 }
 .section__label {
@@ -163,7 +163,7 @@
     text-align: left;
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-right: 104px;
   }
 }
