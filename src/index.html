@@ -346,11 +346,16 @@
         adipiscing elit, sed do eiusmod tempor incididunt ut labore et
       </p>
     </div>
-    <div class="modal modal-product-card" data-modal="product-card">
+    <div
+      class="modal modal-product-card"
+      data-modal="product-card"
+      data-ovellay
+    >
       <svg
         class="modal__cross js-modal-close"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
+        data-modal-close
       >
         <path
           d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
@@ -440,7 +445,7 @@
         </button>
       </form>
     </div>
-    <div class="overlay js-overlay-modal"></div>
+    <div class="overlay js-overlay-modal is-hidden"></div>
     <!-- scripts -->
     <!-- modal -->
     <script src="./js/modal.js"></script>
@@ -458,5 +463,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
     ></script>
     <script type="module" src="./js/swiper-slider.js"></script>
+    <!-- body-no-scroll -->
+    <script type="module" src="./js/body-no-scroll.js"></script>
   </body>
 </html>
