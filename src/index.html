@@ -47,25 +47,27 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- header -->
-    <include src="./partials/header.html"></include>
-    <!-- main -->
-    <main>
-      <include src="./partials/hero.html"></include>
-      <include src="./partials/products.html"></include>
-      <include src="./partials/about.html"></include>
-      <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/customer-reviews.html"></include>
-      <include src="./partials/contacts.html"></include>
-    </main>
-    <!-- footer -->
-    <include src="./partials/footer.html"></include>
+    <div class="page">
+      <!-- header -->
+      <include src="./partials/header.html"></include>
+      <!-- main -->
+      <main>
+        <include src="./partials/hero.html"></include>
+        <include src="./partials/products.html"></include>
+        <include src="./partials/about.html"></include>
+        <include src="./partials/advantages.html"></include>
+        <include src="./partials/gallery.html"></include>
+        <include src="./partials/customer-reviews.html"></include>
+        <include src="./partials/contacts.html"></include>
+      </main>
+      <!-- footer -->
+      <include src="./partials/footer.html"></include>
+    </div>
     <!-- buttons -->
     <include src="./partials/buttons.html"></include>
     <!-- mobile-menu -->
     <include src="./partials/mobile-menu.html"></include>
-    <!-- modal-ingredients -->
+    <!-- modals -->
     <div class="modal modal-ingredients" data-modal="ingredients">
       <svg
         class="modal__cross js-modal-close"
@@ -436,7 +438,9 @@
     </div>
     <div class="overlay js-overlay-modal"></div>
     <!-- scripts -->
+    <!-- modal -->
     <script src="./js/modal.js"></script>
+    <!-- mobile menu -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

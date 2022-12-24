@@ -1,5 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-main);
   color: var(--text-main-clr);
@@ -38,4 +42,8 @@ body {
       background-image: url(../images/background/lg@2x.jpg);
     }
   }
+}
+
+.page {
+  overflow: hidden;
 }
