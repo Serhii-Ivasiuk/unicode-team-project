@@ -1,7 +1,29 @@
 .contacts {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: var(--bg-main-clr);
+
+  background-image: linear-gradient(
+    to bottom,
+    transparent 353px,
+    var(--bg-main-clr) 353px
+  );
+
+  @media screen and(min-width:768px) {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 300px,
+      var(--bg-main-clr) 300px
+    );
+  }
+
+  @media screen and(min-width:1200px) {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 128px,
+      var(--bg-main-clr) 128px
+    );
+  }
+
   padding-bottom: 60px;
   @media screen and(min-width:768px) {
     padding-bottom: 40px;
@@ -200,6 +222,8 @@
   }
 }
 
-.contacts-btn__item:not(:last-child) {
-  margin-bottom: 16px;
+@media screen and (max-width: 767px) {
+  .contacts-btn__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
