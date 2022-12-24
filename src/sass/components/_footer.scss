@@ -30,11 +30,15 @@
   @media screen and (max-width: 767px) {
     width: 280px;
   }
+
   @media screen and (min-width: 768px) {
     width: 352px;
+    gap: 8px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 504px;
+    gap: 14px;
   }
 }
 
