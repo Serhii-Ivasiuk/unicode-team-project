@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-color: var(--bg-main-clr);
 }
@@ -19,8 +23,6 @@
 .logo {
   margin-right: auto;
 }
-
-
 
     // width: 40px;
     // height: 37px;
