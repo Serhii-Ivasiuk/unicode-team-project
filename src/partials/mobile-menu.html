@@ -1,6 +1,36 @@
 <div class="menu-container js-menu-container" id="mobile-menu">
   <div class="mobile-menu-logo">
-    <a href="#" class="logo">logo</a>
+    <a href="./index.html" class="logo">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ../src/images/logo/logo-60.png  1x,
+            ../src/images/logo/logo-120.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../src/images/logo/logo-48.png 1x,
+            ../src/images/logo/logo-96.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../src/images/logo/logo-40.png 1x,
+            ../src/images/logo/logo-80.png 2x
+          "
+          type="image/png"
+        />
+        <img src="../src/images/logo/logo-40.png" alt="Logo" loading="lazy" />
+      </picture>
+    </a>
   </div>
   <button class="menu-toggle-close js-close-menu">
     <svg class="icon-close" width="32" height="32">
@@ -9,22 +39,22 @@
   </button>
   <ul class="mobile-menu">
     <li class="mobile-menu-item">
-      <a class="mobile-menu-link--current" href="#">Home</a>
+      <a class="mobile-menu-link" href="./index.html">Home</a>
     </li>
     <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="#about">How it’s made?</a>
+      <a class="mobile-menu-link" href="#advantages">How it’s made?</a>
     </li>
     <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="#service">Our products</a>
+      <a class="mobile-menu-link" href="#products">Our products</a>
     </li>
     <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="#contact">Contact</a>
+      <a class="mobile-menu-link" href="#contacts">Contact</a>
     </li>
   </ul>
   <button
-    class="btn btn--with-bg btn--with-icon"
+    class="btn btn--with-bg btn--with-icon js-open-modal mobile-menu-btn"
     type="button"
-    class="mobile-menu-btn"
+    data-modal="product-card"
   >
     <span class="btn__text">Buy now</span>
     <svg class="btn__icon icon" width="12" height="12">
