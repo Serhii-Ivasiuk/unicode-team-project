@@ -53,24 +53,18 @@
 }
 
 .hero__link-products {
-  @media screen and (min-width: 768px) {
-    min-width: 134px;
-    min-height: 42px;
-  }
-
+ 
     @media screen and (min-width: 1200px) {
-      min-height: 42px;
-        font-size: 14px;
-          line-height: calc(18 / 14);
+      min-width: 134px;
+      font-size: 14px;
+      line-height: calc(18 / 14);
     }
 }
 
 .hero__link-how {
-  min-width: 100px;
-    min-height: 24px;
 
   @media screen and (min-width: 768px) {
-      min-width: 106px;
+      min-width: 114px;
     }
   
     @media screen and (min-width: 1200px) {
