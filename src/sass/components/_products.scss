@@ -51,10 +51,6 @@
 .products {
   @include section(60px);
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    @include section(21px, 60px);
-  }
-
   &__list {
     @media screen and (min-width: 768px) {
       display: flex;
@@ -211,13 +207,6 @@
     text-align: center;
     border-radius: 24px;
     background: var(--bg-product-one-clr);
-
-    @include transition(transform);
-
-    &:hover,
-    &:focus {
-      transform: scale(1.05);
-    }
 
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
