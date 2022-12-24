@@ -1,8 +1,36 @@
 .footer {
+  position: relative;
+  // display: flex;
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 20px;
   background-color: var(--bg-main-clr);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 12px;
+  }
+
+  &::after {
+  content: '';
+  display: block;
+  height: 1px;
+  // flex-grow: 1;
+  position: absolute;
+  width: 100vw;
+  bottom: 82px;
+  left: 0;
+
+  background-color: #E1E1E1;
+
+  @media screen and (min-width: 768px) {
+    bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 16px;
+    bottom: 44px;
+    max-width: 1167px;
+  }
+}
 }
 
 .footer__container {
@@ -62,7 +90,7 @@
     @include fonts(48px, 59px, 700, 0.06em);
   }
   @media screen and (min-width: 1200px) {
-    @include fonts(58px, 71px, 700, 0.04em);
+    @include fonts(58px, 71px, 700, 0.06em);
   }
 }
 
@@ -145,18 +173,23 @@
 
 .foter-info {
   text-align: center;
-  border-top: 1px solid #e1e1e1;
+  // border-top: 1px solid #e1e1e1;
   padding-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 12px;
+  }
+
 }
 
 .foter-info_text {
-  @include fonts(14px, 21px, 700, 0.04em, false, var(--text-footer-clr));
+  @include fonts(14px, 21px, 700, 0.01em, false, var(--text-footer-clr));
 
   @media screen and (min-width: 768px) {
     display: inline;
-    @include fonts(14px, 26px);
+    @include fonts(14px, 26px, false, 0.02em);
   }
   @media screen and (min-width: 1200px) {
-    @include fonts(12px, 32px, false, 0.02em);
+    @include fonts(12px, 22px, false, 0.02em);
   }
 }
