@@ -4,29 +4,22 @@
 
 .header-container {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   padding-top: 12px;
-  padding-bottom: 12px;
 
   @media screen and (min-width: 768px) {
     padding-top: 20px;
-    padding-bottom: 20px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 28px;
-    padding-bottom: 28px;
   }
 }
 
 .logo {
-  display: flex;
-  // align-items: center;
-  margin-right: 308px;
-  width: 40px; 
+  width: 40px;
   height: 37px;
-  fill: var(--accent-clr);
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
     width: 48px;
@@ -39,6 +32,11 @@
   }
 }
 
+.logo__icon {
+  height: 100%;
+  width: auto;
+  fill: var(--accent-clr);
+}
 
 .nav_list {
   display: none;
