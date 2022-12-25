@@ -1,6 +1,4 @@
 .about {
-  max-width: 1200px;
-  margin: 0 auto;
   @include section(60px, 50px);
 
   background-color: var(--bg-main-clr);

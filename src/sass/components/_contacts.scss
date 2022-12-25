@@ -1,7 +1,4 @@
 .contacts {
-  max-width: 1200px;
-  margin: 0 auto;
-
   background-image: linear-gradient(
     to bottom,
     transparent 353px,
@@ -223,12 +220,11 @@
 
 .contacts-location__phone {
   margin-bottom: 6px;
-  
+
   @media screen and (min-width: 768px) {
     margin-bottom: 4px;
   }
 }
-
 
 // btn
 .contacts-btn {
