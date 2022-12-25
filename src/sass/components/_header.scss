@@ -4,7 +4,7 @@
 
 .header-container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   padding-top: 12px;
 
   @media screen and (min-width: 768px) {
@@ -43,6 +43,16 @@
     color: var(--accent-clr);
   }
 }
+
+
+
+// .icon-menu-b {
+//   fill: var(--text-white-color)
+//   fill:red;
+// }
+// .icon-menu:hover {
+//   fill: black;
+// }
 
 .btn-wrap {
   display: none;
