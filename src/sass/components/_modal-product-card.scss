@@ -1,8 +1,8 @@
 .modal-product-card {
   padding: 28px;
   overflow-y: auto;
-  height: 100vh;
-  @media screen and (max-width: 479.99px) {
+  height: 600px;
+  @media screen and (max-width: 479px) {
     padding-top: 60px;
   }
   @media screen and (min-width: 480px) {
@@ -157,12 +157,27 @@
 }
 .product-card-list__p {
   display: block;
-  justify-content: center;
-  margin-top: 96px;
+  // justify-content: center;
+  padding-top: 96px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text-main-clr);
+
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.checkbox-input {
+  // appearance: none;
+}
+
+.checkbox-input:checked ~ .product-card-list__p {
+  background-color: #96af8c;
+}
+
+.input__wrap {
+  height: 100%;
 }

@@ -47,3 +47,12 @@ body {
 .page {
   overflow: hidden;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.overlay.active {
+  overflow-y: auto;
+  pointer-events: none;
+}
