@@ -25,7 +25,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
+  z-index: 1000; /* Должен быть выше чем у подложки*/
 
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
@@ -44,20 +44,9 @@
   visibility: visible;
 }
 
-/* Стили для кнопки закрытия */
-
-.modal__cross {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  fill: #444;
-  cursor: pointer;
-}
-
 .modal-form-wrapper__field:placeholder-shown:invalid {
   border-color: #198754;
+  background-image: none;
 }
 
 .modal-form-wrapper__field:invalid,
@@ -80,4 +69,18 @@
 .modal-form-wrapper__field:valid:focus {
   border-color: #198754;
   box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 25%);
+}
+
+/* Стили для кнопки закрытия */
+
+.button-svg {
+  border: none;
+  background-color: var(--bg-secondary-clr);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 25px;
+  height: 25px;
+  fill: #444;
+  cursor: pointer;
 }

@@ -1,7 +1,7 @@
 .modal-product-card {
   padding: 28px;
   overflow-y: auto;
-  height: 100vh;
+  height: 600px;
   @media screen and (max-width: 479px) {
     padding-top: 60px;
   }
@@ -49,7 +49,7 @@
   position: relative;
 }
 .modal-product-card-list__item:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.99px) {
     margin-bottom: 80px;
   }
 }
