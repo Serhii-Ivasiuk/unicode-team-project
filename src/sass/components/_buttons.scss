@@ -13,7 +13,7 @@
   border: none;
   border-radius: 10px;
   outline: none;
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), pointer;
 }
 
 .btn--bordered {
@@ -107,7 +107,7 @@
   &:hover,
   &:focus {
     color: var(--btn-hover-focus-bg-clr);
-    
+
     animation: shake-top 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   }
 

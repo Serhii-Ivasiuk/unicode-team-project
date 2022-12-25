@@ -32,8 +32,11 @@ address {
   font-style: normal;
 }
 
+button {
+  cursor: url('../images/cursor-pointer.svg'), pointer;
+}
+
 body,
-a:hover,
-button:hover {
-  cursor: url('../images/cursor.svg'), pointer;
+a {
+  cursor: url('../images/cursor.svg'), auto;
 }
