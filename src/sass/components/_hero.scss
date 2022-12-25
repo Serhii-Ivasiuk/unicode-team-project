@@ -1,17 +1,15 @@
 .hero__section {
   @include section(50px, 237px);
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: var(--bg-main-clr);
-    position: relative;
+  background-color: var(--bg-main-clr);
+  position: relative;
 
-    @media screen and (min-width: 768px) {
-      @include section(14px, 176px);
-    }
+  @media screen and (min-width: 768px) {
+    @include section(14px, 176px);
+  }
 
-    @media screen and (min-width: 1200px) {
-      @include section(45px, 332px);
-    }
+  @media screen and (min-width: 1200px) {
+    @include section(45px, 332px);
+  }
 }
 
 .hero__title {
@@ -24,14 +22,14 @@
     font-size: 34px;
 
     @media screen and (min-width: 1200px) {
-          font-size: 38px;
-            line-height: calc(48 / 38);
+      font-size: 38px;
+      line-height: calc(48 / 38);
     }
   }
 
-    @media screen and (min-width: 768px) {
-      margin-bottom: 24px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
 
   @media screen and (min-width: 1200px) {
     max-width: 367px;
@@ -45,42 +43,33 @@
   display: flex;
   gap: 12px;
   align-items: baseline;
-
 }
 
-.hero__link-products, .hero__link-how {
+.hero__link-products,
+.hero__link-how {
   position: relative;
   z-index: 3;
 }
 
 .hero__link-products {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     min-width: 134px;
-    min-height: 42px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
   }
-
-    @media screen and (min-width: 1200px) {
-      min-width: 196px;
-      min-height: 42px;
-        font-size: 14px;
-          line-height: calc(18 / 14);
-    }
 }
 
 .hero__link-how {
-  min-width: 100px;
-    min-height: 24px;
-
   @media screen and (min-width: 768px) {
-      min-width: 106px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      min-width: 154px;
-        min-height: 40px;
-      font-size: 14px;
-      line-height: calc(18 / 14);
-    }
+    min-width: 114px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 154px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
 }
 
 .hero__overlay {
@@ -93,12 +82,12 @@
   width: 320px;
   height: 100%;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
-        @media screen and (min-width: 1200px) {
-          width: 1200px;
-        }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .hero__img-dots {
@@ -137,15 +126,15 @@
   animation-duration: 7s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 3;
-  
-    @media screen and (min-width: 1200px) {
-      left: 16px;
-      bottom: 65px;
-    }
 
-    @media screen and (max-width: 767px){
-      display: none;
-    }
+  @media screen and (min-width: 1200px) {
+    left: 16px;
+    bottom: 65px;
+  }
+
+  @media screen and (max-width: 767.99px) {
+    display: none;
+  }
 }
 
 .hero__stats {
@@ -159,7 +148,7 @@
     bottom: 368px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.99px) {
     display: none;
   }
 }
@@ -178,23 +167,23 @@
   display: block;
   margin-bottom: 4px;
 
-    @media screen and (min-width: 1200px) {
-      font-size: 46px;
-      line-height: calc(56 / 46);
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: calc(56 / 46);
+  }
 }
 
 .hero__stats-text {
   font-weight: 400;
-    font-size: 8px;
-    line-height: calc(10 / 8);
-    text-align: right;
-    color: var(--text-secondary-clr);
+  font-size: 8px;
+  line-height: calc(10 / 8);
+  text-align: right;
+  color: var(--text-secondary-clr);
 
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      line-height: calc(17 / 14);
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
 
 .hero__details {
@@ -216,13 +205,13 @@
     width: 200px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.99px) {
     display: none;
   }
 }
 
 .hero__details[open] {
-  animation: slide .5s ease-in-out;
+  animation: slide 0.5s ease-in-out;
 }
 
 .hero__details[open] > .hero__details-arrow::after {
@@ -268,7 +257,7 @@
   }
 
   50% {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 
   100% {
@@ -282,7 +271,7 @@
   }
 
   25% {
-    transform: scale(110%)
+    transform: scale(110%);
   }
 
   50% {
@@ -290,7 +279,7 @@
   }
 
   75% {
-    transform: scale(110%)
+    transform: scale(110%);
   }
 
   100% {

@@ -25,7 +25,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
+  z-index: 1000; /* Должен быть выше чем у подложки*/
 
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
@@ -44,20 +44,43 @@
   visibility: visible;
 }
 
+.modal-form-wrapper__field:placeholder-shown:invalid {
+  border-color: #198754;
+  background-image: none;
+}
+
+.modal-form-wrapper__field:invalid,
+.modal-form-wrapper__field:valid {
+  border-color: #dc3545;
+  padding-right: 2.25rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5625rem center;
+  background-size: 1.125rem 1.125rem;
+}
+.modal-form-wrapper__field:valid {
+  border-color: #198754;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+}
+.modal-form-wrapper__field:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+.modal-form-wrapper__field:valid:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 25%);
+}
+
 /* Стили для кнопки закрытия */
 
-.modal__cross {
-  width: 15px;
-  height: 15px;
+.button-svg {
+  border: none;
+  background-color: var(--bg-secondary-clr);
   position: absolute;
   top: 12px;
   right: 12px;
+  width: 25px;
+  height: 25px;
   fill: #444;
   cursor: pointer;
-}
-.modal-form-wrapper__field:not(:placeholder-shown):invalid:required {
-  outline-color: rgb(234, 31, 0);
-}
-.modal-form-wrapper__field:valid:required {
-  outline-color: rgb(47, 167, 0);
 }
