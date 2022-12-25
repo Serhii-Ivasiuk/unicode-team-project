@@ -150,6 +150,7 @@
   line-height: 140%;
   color: var(--text-main-clr);
   padding: 11px 11px;
+  resize: none;
 
   @media screen and (min-width: 480px) {
     width: 315px;
