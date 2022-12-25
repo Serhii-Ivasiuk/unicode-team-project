@@ -11,6 +11,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: 0.3s all;
+  backdrop-filter: blur(2px);
 }
 /* Стили для модальных окон */
 .modal {
