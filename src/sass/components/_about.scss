@@ -1,11 +1,13 @@
 .about {
-  max-width: 1200px;
-  margin: 0 auto;
   @include section(60px, 50px);
-  background-color: var(--mobile-menu-bg-clr);
+
+  background-color: var(--bg-main-clr);
 
   @media screen and (min-width: 768px) {
-    @include section(60px, 60px);
+    @include section(60px, 86px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include section(60px, 100px);
   }
 }
 .section__label {
@@ -36,6 +38,7 @@
   font-family: var(--font-secondary);
   text-align: center;
   text-transform: uppercase;
+  font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.04em;
 
@@ -51,54 +54,109 @@
     font-size: 36px;
   }
 }
-.about-container {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-left: 17px;
-    padding-right: 17px;
-  }
-}
 .about-content {
-  position: relative;
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
-.about__img {
-  margin: 0 auto;
-  margin-bottom: 40px;
+.about-img {
+  width: 280px;
+  height: 280px;
 
-  &::after {
-    z-index: 100;
-    content: ' ';
+  position: absolute;
+
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+
+  &::before {
+    margin-top: 22px;
+    display: block;
+
+    content: '';
     width: 280px;
     height: 280px;
 
-    background-color: var(--accent-clr);
-    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-    display: block;
-    position: absolute;
-    left: 0;
-    top: -20px;
-    transform: translate(-50%);
+    background-image: url(../images/about/img-1_280.png);
+    // retina mobile screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/img-1_560.png);
+    }
+    // Tablet screen
+    @media screen and (min-width: 768px) {
+      width: 330px;
+      height: 330px;
+      margin-top: 26px;
+
+      background-image: url(../images/about/img-1_330.png);
+      // retina tablet screen
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about/img-1_660.png);
+      }
+    }
+    // Desktop screen
+    @media screen and (min-width: 1200px) {
+      width: 490px;
+      height: 490px;
+      margin-top: 39px;
+
+      background-image: url(../images/about/img-1_490.png);
+      // retina desktop screen
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about/img-1_980.png);
+      }
+    }
   }
 
   @media screen and (min-width: 768px) {
-    margin-right: 38px;
+    width: 330px;
+    height: 330px;
   }
   @media screen and (min-width: 1200px) {
+    width: 490px;
+    height: 490px;
+  }
+}
+.img-wrap {
+  width: 280px;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 62px;
+
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    min-width: 330px;
+    height: 330px;
+    margin-left: 0;
+    margin-right: 38px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 490px;
+    height: 490px;
+    margin-left: 0;
     margin-right: 109px;
+    margin-bottom: 0;
   }
 }
 .about-info {
-  padding-left: 30px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
@@ -107,7 +165,7 @@
     text-align: left;
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-right: 104px;
   }
 }
@@ -118,6 +176,7 @@
 
   font-size: 12px;
   line-height: 1.8;
+  letter-spacing: 0.04em;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;
@@ -127,7 +186,8 @@
   }
 
   &-2 {
-    @media screen and (min-width: 320px) and (max-width: 767.97px) {
+    @media screen and (min-width: 320px) and (max-width: 767.99px) {
+      margin-bottom: 10px;
       line-height: 1.6;
     }
     @media screen and (min-width: 1200px) {
@@ -150,7 +210,7 @@
   }
 }
 .about-info__text--hidden {
-  @media screen and (min-width: 320px) and (max-width: 767.97px) {
+  @media screen and (min-width: 320px) and (max-width: 767.99px) {
     display: none;
   }
   display: block;

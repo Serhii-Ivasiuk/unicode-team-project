@@ -3,6 +3,7 @@
 // utils
 @import './utils/variables';
 @import './utils/mixin';
+@import './utils/animation';
 // common
 @import './common/reset';
 @import './common/common';
@@ -21,3 +22,9 @@
 @import './components/footer';
 // mobile-menu
 @import './components/mobile-menu';
+@import './components/modal';
+@import './components/modal-ingredients';
+@import './components/modal-franchise';
+@import './components/modal-location';
+@import './components/modal-read-more';
+@import './components/modal-product-card';

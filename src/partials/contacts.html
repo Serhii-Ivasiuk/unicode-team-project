@@ -1,4 +1,4 @@
-<section>
+<section class="contacts" id="contacts">
   <h2 class="visually-hidden">Contats</h2>
 
   <div class="container">
@@ -7,7 +7,7 @@
       <li class="contacs-location">
         <p class="contacts-card__title">Cafe</p>
         <div class="contacts-location__groop line">
-          <p class="contacs-location__title">Chicago</p>
+          <p class="contacs-location__title--town">Chicago</p>
           <address>
             <a
               class="contacs-location__link"
@@ -43,7 +43,7 @@
       <li class="contacs-location">
         <p class="contacts-card__title">Foodtruck</p>
         <div class="contacts-location__groop line">
-          <p class="contacs-location__title">Los Angeles</p>
+          <p class="contacs-location__title--town">Los Angeles</p>
           <address>
             <a
               class="contacs-location__link"
@@ -79,7 +79,7 @@
       <li class="contacs-location">
         <p class="contacts-card__title">Cafe</p>
         <div class="contacts-location__groop line">
-          <p class="contacs-location__title">New York</p>
+          <p class="contacs-location__title--town">New York</p>
           <address>
             <a
               class="contacs-location__link"
@@ -117,9 +117,10 @@
     <ul class="contacts-btn">
       <li class="contacts-btn__item">
         <button
-          class="btn btn--with-icon btn--with-bg btn--with-bg-sm js-open-modal"
+          class="btn btn--with-icon btn--with-bg btn--with-bg-lg js-open-modal"
           data-modal="location"
           type="button"
+          data-modal-open-location
         >
           <span class="contacts-btn__text">Our Locations</span>
           <svg class="btn__icon icon" width="12" height="12">
@@ -129,9 +130,10 @@
       </li>
       <li class="contacts-btn__item">
         <button
-          class="btn btn--with-icon btn--with-bg btn--with-bg-sm js-open-modal"
+          class="btn btn--bordered btn--bordered-lg js-open-modal"
           data-modal="franchise"
           type="button"
+          data-modal-open-franchise
         >
           <span class="contacts-btn__text">Franchise</span>
           <svg class="btn__icon icon" width="12" height="12">

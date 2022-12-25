@@ -1,15 +1,17 @@
 .advantages {
-  max-width: 1200px;
-  margin: 0 auto;
   background-color: var(--bg-main-clr);
   padding-bottom: 64px;
 
+  @media screen and (max-width: 767.99px) {
+    padding-bottom: 32px;
+  }
+
   @media screen and (min-width: 768px) {
-    padding-bottom: 204px;
+    padding-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 178px;
+    padding-bottom: 80px;
   }
 }
 .advantages__container {
@@ -49,7 +51,7 @@
 }
 
 .advantages__item:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.99px) {
     margin-bottom: 16px;
   }
 }
@@ -110,7 +112,6 @@
   line-height: calc(44 / 36);
   letter-spacing: 0.04em;
   text-align: center;
-  text-transform: uppercase;
   color: var(--text-secondary-clr);
   margin-bottom: 16px;
 

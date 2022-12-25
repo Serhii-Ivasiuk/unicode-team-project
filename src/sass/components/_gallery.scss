@@ -1,54 +1,61 @@
 .gallery {
-  position: relative;
-  @media screen and (max-width: 767px) {
-    padding-bottom: 48px;
+  @media screen and (max-width: 767.99px) {
+    padding-bottom: 80px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
     padding-bottom: 100px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 42px;
+    padding-bottom: 140px;
   }
 }
 
 .gallery-container {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.99px) {
     padding-right: 20px;
     padding-left: 20px;
+
+    background-image: linear-gradient(
+      to bottom,
+      var(--bg-main-clr) 32px,
+      transparent 32px
+    );
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
     padding-right: 32px;
     padding-left: 32px;
-    min-height: 183px;
+
+    background-image: linear-gradient(
+      to bottom,
+      var(--bg-main-clr) 144px,
+      transparent 144px
+    );
   }
   @media screen and (min-width: 1200px) {
     padding-right: 93px;
     padding-left: 93px;
+
+    background-image: linear-gradient(
+      to bottom,
+      var(--bg-main-clr) 100px,
+      transparent 100px
+    );
   }
 }
 
 .gallery-thumb {
   margin: 0 auto;
-  overflow: hidden;
 
-  @media screen and (max-width: 767px) {
-    position: relative;
-    top: -32px;
+  @media screen and (max-width: 767.99px) {
     max-width: 440px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    position: absolute;
-    top: -144px;
-    left: 50%;
-    transform: translateX(-50%);
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
     min-width: 704px;
   }
 
   @media screen and (min-width: 1200px) {
-    position: relative;
-    top: -98px;
     max-width: 1013px;
   }
 }
@@ -58,13 +65,13 @@
   margin: 0 auto;
   overflow: hidden;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.99px) {
     max-width: 440px;
     height: 130px;
     border-radius: 8px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
     width: 704px;
     height: 327px;
     border-radius: 18px;
@@ -90,13 +97,13 @@
   0% {
     opacity: 1;
   }
-  28% {
+  13% {
     opacity: 1;
   }
-  33% {
+  17% {
     opacity: 0;
   }
-  94% {
+  96% {
     opacity: 0;
   }
   100% {
@@ -108,77 +115,25 @@
   animation-name: cf4FadeInOut;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-direction: normal;
 }
 
 #cf4a img:nth-of-type(1) {
-  animation-delay: 4s;
+  animation-delay: 10s;
 }
 #cf4a img:nth-of-type(2) {
-  animation-delay: 2s;
+  animation-delay: 8s;
 }
 #cf4a img:nth-of-type(3) {
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(4) {
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(5) {
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(6) {
   animation-delay: 0s;
 }
-
-//p#slide1_controls {
-// display: flex;
-//  justify-content: center;
-// gap: 30px;
-// min-width: 10px;
-// min-height: 20px;
-//  margin-top: 5px;
-
-// @include fonts(12px, false, 500, false, false, var(--text-main-clr));
-
-// @media screen and (max-width: 1199px) {
-//   display: none;
-// }
-//}
-
-//#slide1_controls span {
-//  padding: 5px;
-// border-radius: 50%;
-// background-color: var(--icon-socials-clr);
-// cursor: pointer;
-
-// @media screen and (max-width: 1199px) {
-//   display: none;
-// }
-//}
-
-//.gallery-dek-img {
-// @media screen and (max-width: 1199px) {
-//   display: none;
-// }
-//}
-
-//#slide1_container {
-//  @media screen and (min-width: 1200px) {
-//    width: 1013px;
-//    height: 422px;
-//   margin: 0 auto;
-//    border-radius: 24px;
-//    overflow: hidden;
-//  }
-//}
-
-//#slide1_images {
-// @media screen and (min-width: 1200px) {
-//   width: 3039px;
-
-//  -webkit-transition: all 1s ease-in-out;
-//  -moz-transition: all 1s ease-in-out;
-//  -o-transition: all 1s ease-in-out;
-//  transition: all 1s ease-in-out;
-//}
-//}
-
-//#slide1_images img {
-// @media screen and (min-width: 1200px) {
-//   padding: 0;
-//   margin: 0;
-//   float: left;
-// }
-//}

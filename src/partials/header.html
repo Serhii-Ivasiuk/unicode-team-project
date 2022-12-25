@@ -1,9 +1,68 @@
-<button
-  class="menu-toggle js-open-menu"
-  aria-expanded="false"
-  aria-controls="mobile-menu"
->
-  <svg width="32" height="32">
-    <use href="./images/icons.svg#icon-menu"></use>
-  </svg>
-</button>
+<header class="header">
+  <div class="container header-container">
+    <a href="./index.html" class="logo">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ../src/images/logo/logo-60.png  1x,
+            ../src/images/logo/logo-120.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../src/images/logo/logo-48.png 1x,
+            ../src/images/logo/logo-96.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../src/images/logo/logo-40.png 1x,
+            ../src/images/logo/logo-80.png 2x
+          "
+          type="image/png"
+        />
+        <img src="../src/images/logo/logo-40.png" alt="Logo" loading="lazy" />
+      </picture>
+    </a>
+
+    <nav class="navigation">
+      <ul class="nav_list list">
+        <li><a href="#" class="nav_link link">Home</a></li>
+        <li><a href="#about" class="nav_link link">How it’s made?</a></li>
+        <li><a href="#products" class="nav_link link">Our products</a></li>
+        <li><a href="#contacts" class="nav_link link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="32" height="32">
+        <use href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <div class="btn-wrap">
+      <button
+        class="btn btn--with-icon btn--with-bg btn--with-bg-sm js-open-modal"
+        type="button"
+        data-modal="product-card"
+        data-modal-open-product-card
+      >
+        <span class="btn__text">Buy now</span>
+        <svg class="btn__icon icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-arrow-sm"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>

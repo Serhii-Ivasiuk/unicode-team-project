@@ -1,0 +1,123 @@
+<div class="modal modal-ingredients" data-modal="ingredients">
+  <button
+    type="button"
+    class="button-svg js-modal-close"
+    data-modal-close-ingredients
+  >
+    <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+      />
+    </svg>
+  </button>
+  <h3 class="modal__title">Chololate icecream</h3>
+  <div class="modal-ingredients-circle">
+    <picture class="modal-ingredients-icecream-img">
+      <source
+        srcset="
+          ./images/modal-ingredients/img_132.png 1x,
+          ./images/modal-ingredients/img_264.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class=""
+        src="./images/modal-ingredients/img_132.png"
+        alt="Chololate icecream"
+        width="132"
+        height="132"
+      />
+    </picture>
+  </div>
+  <ul class="macros-list">
+    <li class="macros-list__item">
+      <div class="macros-wrapper">
+        <div class="macros-wrapper__item">320</div>
+        kcal
+      </div>
+    </li>
+    <li class="macros-list__item">
+      <div class="macros-wrapper">
+        <div class="macros-wrapper__item">4g</div>
+        Prote.
+      </div>
+    </li>
+    <li class="macros-list__item">
+      <div class="macros-wrapper">
+        <div class="macros-wrapper__item">8,2g</div>
+        Fats
+      </div>
+    </li>
+    <li class="macros-list__item">
+      <div class="macros-wrapper">
+        <div class="macros-wrapper__item">40,4g</div>
+        Carbs
+      </div>
+    </li>
+  </ul>
+  <h3 class="ingredients-title">Ingredients</h3>
+  <ul class="ingredients-list">
+    <li class="ingredients-list__item">
+      <span class="ingredients-list__item--position">Milk</span>100ml
+    </li>
+    <li class="ingredients-list__item">
+      <span class="ingredients-list__item--position">Belgian chocolate</span>20g
+    </li>
+    <li class="ingredients-list__item">
+      <span class="ingredients-list__item--position">Cream</span>150ml
+    </li>
+    <li class="ingredients-list__item">
+      <span class="ingredients-list__item--position">Cocoa powder</span>30g
+    </li>
+    <li class="ingredients-list__item">
+      <span class="ingredients-list__item--position">Sugar</span>40g
+    </li>
+    <li class="ingredients-list__item">
+      <span class="ingredients-list__item--position">Vanilla sugar</span>10g
+    </li>
+  </ul>
+  <form class="modal-form" name="modal_form">
+    <div class="modal-form__group" role="group">
+      <label class="modal-form__label" for="user_name"></label>
+      <div class="modal-form-wrapper">
+        <input
+          class="modal-form-wrapper__field"
+          type="text"
+          name="user_name"
+          id="user_name"
+          required
+          placeholder="Name"
+          pattern="[A-z]{1,30}"
+          title="Username should only contain english letters. e.g. John"
+        />
+      </div>
+      <label class="modal-form__label" for="user_phone"></label>
+      <div class="modal-form-wrapper">
+        <input
+          class="modal-form-wrapper__field"
+          type="tel"
+          name="user_phone"
+          id="user_phone"
+          required
+          placeholder="Phone"
+          pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
+          title="Phone number should be like +38(044)555-55-55"
+        />
+      </div>
+      <label class="modal-form__label" for="user_message"></label>
+      <textarea
+        class="modal-form-message"
+        name="user_message"
+        id="user_message"
+        rows="4"
+        placeholder="Comment"
+      ></textarea>
+    </div>
+    <button
+      class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
+      type="submit"
+    >
+      <span class="btn__text">Submit</span>
+    </button>
+  </form>
+</div>

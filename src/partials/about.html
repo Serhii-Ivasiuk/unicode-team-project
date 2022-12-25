@@ -1,23 +1,11 @@
-<section class="about">
-  <div class="about-container">
+<section class="about" id="about">
+  <div class="about-container container">
     <p class="section__label">Tradition and love</p>
     <h2 class="section__heading">How it's made?</h2>
     <div class="about-content">
-      <img
-        class="about__img"
-        srcset="
-          ./images/about/img-1_280.png 280w,
-          ./images/about/img-1_330.png 330w,
-          ./images/about/img-1_490.png 490w,
-          ./images/about/img-1_560.png 560w,
-          ./images/about/img-1_660.png 660w,
-          ./images/about/img-1_980.png 980w
-        "
-        sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px, (min-width: 320px) 280px, 100vw"
-        src="./images/about/img-1_490.png"
-        alt=""
-        loading="lazy"
-      />
+      <div class="img-wrap">
+        <div class="about-img"></div>
+      </div>
       <div class="about-info">
         <p class="about-info__text about-info__text-1">
           Ice is a place where you will become not only a little happier, but
@@ -34,8 +22,10 @@
           This is enough to choose ice cream and coffee for any mood!
         </p>
         <button
-          class="btn btn--with-icon btn--with-bg btn--with-bg-md"
+          class="btn btn--with-icon btn--with-bg btn--with-bg-md js-open-modal"
           type="button"
+          data-modal="read-more"
+          data-modal-open-read-more
         >
           <span class="btn__text">Read more</span>
           <svg class="btn__icon icon" width="12" height="12">

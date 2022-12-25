@@ -24,6 +24,7 @@
   &:hover,
   &:focus {
     border-color: var(--btn-hover-focus-bg-clr);
+    animation: shake-top 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   }
 
   &:focus {
@@ -73,6 +74,7 @@
   &:hover,
   &:focus {
     background-color: var(--btn-hover-focus-bg-clr);
+    animation: shake-top 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   }
 
   &:focus {
@@ -105,6 +107,8 @@
   &:hover,
   &:focus {
     color: var(--btn-hover-focus-bg-clr);
+    
+    animation: shake-top 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   }
 
   &:focus {
@@ -117,9 +121,9 @@
 }
 
 .btn--text-decorated-sm {
-  min-width: 106px;
+  min-width: 100px;
   min-height: 24px;
-  padding: 5px;
+  padding: 5px 0;
 
   font-size: 12px;
   line-height: calc(15 / 12);
