@@ -2,7 +2,7 @@ function backToTop() {
 	let button = $(".up__button");
 
 	$(window).on("scroll", () => {
-		if ($(this).scrollTop() >= 350) {
+		if ($(this).scrollTop() >= 1500) {
 			button.fadeIn();
 		} else {
 			button.fadeOut();
@@ -11,7 +11,7 @@ function backToTop() {
 
 	button.on("click", (e) => {
 		e.preventDefault();
-		$("html").animate({ scrollTop: 0 }, 1000);
+		$("html").animate({ scrollTop: 0 }, 250);
 	});
 }
 
