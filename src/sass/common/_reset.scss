@@ -31,3 +31,9 @@ ul {
 address {
   font-style: normal;
 }
+
+body,
+a:hover,
+button:hover {
+  cursor: url('../images/cursor.svg'), pointer;
+}
