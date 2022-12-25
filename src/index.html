@@ -362,20 +362,23 @@
           <li
             class="modal-product-card-list__item modal-product-card-list__item--ice-cream"
           >
-            <div
-              class="product-card-list__circle product-card-list__circle--ice-cream"
-            ></div>
-            <p class="product-card-list__p">Ice cream</p>
-            <div class="checkbox">
-              <input
-                class="checkbox"
-                type="checkbox"
-                id="ice-cream"
-                required
-                title="Username should only contain english letters. e.g. John"
-              />
-              <label for="ice-cream" class="text"></label>
-            </div>
+            <label class="checkbox-label" for="ice-cream" class="text">
+              <div class="checkbox">
+                <div
+                  class="product-card-list__circle product-card-list__circle--ice-cream"
+                ></div>
+                <div class="input__wrap">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="ice-cream"
+                    required
+                    title="Username should only contain english letters. e.g. John"
+                  />
+                  <p class="product-card-list__p">Ice cream</p>
+                </div>
+              </div>
+            </label>
           </li>
           <li
             class="modal-product-card-list__item modal-product-card-list__item--ice-coffee"
@@ -386,7 +389,7 @@
             <p class="product-card-list__p">Ice coffee</p>
             <div class="checkbox">
               <input
-                class="checkbox"
+                class="checkbox-input"
                 type="checkbox"
                 id="ice-coffee"
                 required
@@ -404,7 +407,7 @@
             <p class="product-card-list__p">Milkshake</p>
             <div class="checkbox">
               <input
-                class="checkbox"
+                class="checkbox-input"
                 type="checkbox"
                 id="milkshake"
                 required
