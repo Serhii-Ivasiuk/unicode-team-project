@@ -82,6 +82,7 @@
   width: 25px;
   height: 25px;
   fill: #444;
+
   @include transition(fill);
   cursor: pointer;
 

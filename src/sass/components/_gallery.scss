@@ -1,8 +1,8 @@
 .gallery {
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767.98px) {
     padding-bottom: 80px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     padding-bottom: 100px;
   }
 
@@ -12,7 +12,7 @@
 }
 
 .gallery-container {
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767.98px) {
     padding-right: 20px;
     padding-left: 20px;
 
@@ -23,7 +23,7 @@
     );
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     padding-right: 32px;
     padding-left: 32px;
 
@@ -48,10 +48,10 @@
 .gallery-thumb {
   margin: 0 auto;
 
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767.98px) {
     max-width: 440px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     min-width: 704px;
   }
 
@@ -65,13 +65,13 @@
   margin: 0 auto;
   overflow: hidden;
 
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767.98px) {
     max-width: 440px;
     height: 130px;
     border-radius: 8px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     width: 704px;
     height: 327px;
     border-radius: 18px;
