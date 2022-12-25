@@ -48,14 +48,14 @@
   }
 }
 
-.icon-menu {
-  fill: var(--text-white-color);
+// .icon-menu {
+//   fill: var(--text-white-color);
 
-  &:hover,
-  &:focus {
-    fill: var(--accent-clr);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     fill: var(--accent-clr);
+//   }
+// }
 
 .btn-wrap {
   display: none;
@@ -64,4 +64,17 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
+}
+
+.menu-toggle {
+  color: var(--text-white-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-clr);
+  }
+}
+
+.icon-menu {
+  fill: currentColor;
 }
