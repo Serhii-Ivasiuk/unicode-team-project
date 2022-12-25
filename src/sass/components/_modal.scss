@@ -84,7 +84,6 @@
   fill: #444;
 
   @include transition(fill);
-  cursor: pointer;
 
   :hover,
   :focus {
