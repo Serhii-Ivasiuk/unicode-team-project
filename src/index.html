@@ -43,11 +43,6 @@
     />
     <!-- custom styles -->
     <link rel="stylesheet" href="./sass/index.scss" />
-    <style>
-      input[type='checkbox'] {
-        display: none;
-      }
-    </style>
     <!-- scrypts -->
     <script type="module" src="./index.js"></script>
   </head>
@@ -362,45 +357,64 @@
         />
       </svg>
       <h3 class="modal-product-card__title">Buy now</h3>
-      <ul class="modal-product-card-list">
-        <li
-          class="modal-product-card-list__item modal-product-card-list__item--ice-cream"
-        >
-          <div
-            class="product-card-list__circle product-card-list__circle--ice-cream"
-          ></div>
-          <p class="product-card-list__p">Ice cream</p>
-          <div class="checkbox">
-            <input type="checkbox" id="ice-cream" />
-            <label for="ice-cream" class="text"></label>
-          </div>
-        </li>
-        <li
-          class="modal-product-card-list__item modal-product-card-list__item--ice-coffee"
-        >
-          <div
-            class="product-card-list__circle product-card-list__circle--ice-coffee"
-          ></div>
-          <p class="product-card-list__p">Ice coffee</p>
-          <div class="checkbox">
-            <input type="checkbox" id="ice-coffee" />
-            <label for="ice-coffee" class="text"></label>
-          </div>
-        </li>
-        <li
-          class="modal-product-card-list__item modal-product-card-list__item--milkshake"
-        >
-          <div
-            class="product-card-list__circle product-card-list__circle--milkshake"
-          ></div>
-          <p class="product-card-list__p">Milkshake</p>
-          <div class="checkbox">
-            <input type="checkbox" id="milkshake" />
-            <label for="milkshake" class="text"></label>
-          </div>
-        </li>
-      </ul>
       <form class="modal-form" name="modal_form">
+        <ul class="modal-product-card-list">
+          <li
+            class="modal-product-card-list__item modal-product-card-list__item--ice-cream"
+          >
+            <div
+              class="product-card-list__circle product-card-list__circle--ice-cream"
+            ></div>
+            <p class="product-card-list__p">Ice cream</p>
+            <div class="checkbox">
+              <input
+                class="checkbox"
+                type="checkbox"
+                id="ice-cream"
+                required
+                title="Username should only contain english letters. e.g. John"
+              />
+              <label for="ice-cream" class="text"></label>
+            </div>
+          </li>
+          <li
+            class="modal-product-card-list__item modal-product-card-list__item--ice-coffee"
+          >
+            <div
+              class="product-card-list__circle product-card-list__circle--ice-coffee"
+            ></div>
+            <p class="product-card-list__p">Ice coffee</p>
+            <div class="checkbox">
+              <input
+                class="checkbox"
+                type="checkbox"
+                id="ice-coffee"
+                required
+                title="Username should only contain english letters. e.g. John"
+              />
+              <label for="ice-coffee" class="text"></label>
+            </div>
+          </li>
+          <li
+            class="modal-product-card-list__item modal-product-card-list__item--milkshake"
+          >
+            <div
+              class="product-card-list__circle product-card-list__circle--milkshake"
+            ></div>
+            <p class="product-card-list__p">Milkshake</p>
+            <div class="checkbox">
+              <input
+                class="checkbox"
+                type="checkbox"
+                id="milkshake"
+                required
+                title="Username should only contain english letters. e.g. John"
+              />
+              <label for="milkshake" class="text"></label>
+            </div>
+          </li>
+        </ul>
+
         <div class="modal-form__group" role="group">
           <label class="modal-form__label" for="user_name"></label>
           <div class="modal-form-wrapper">
@@ -437,6 +451,7 @@
             placeholder="Comment"
           ></textarea>
         </div>
+
         <button
           class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
           type="submit"

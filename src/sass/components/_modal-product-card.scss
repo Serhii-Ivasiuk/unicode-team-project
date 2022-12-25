@@ -166,3 +166,11 @@
   text-transform: uppercase;
   color: var(--text-main-clr);
 }
+
+.checkbox {
+  // appearance: none;
+}
+
+.checkbox:checked ~ .product-card-list__p {
+  background-color: red;
+}
