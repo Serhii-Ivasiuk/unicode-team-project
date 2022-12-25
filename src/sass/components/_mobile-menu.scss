@@ -55,8 +55,8 @@
   padding: 100px 20px 64px;
   background-color: var(--mobile-menu-bg-clr);
   z-index: 999;
-  transform: translateX(100%) scale(0.7);
-  transition: transform 250ms ease-in-out, scale 250ms ease-in-out;
+  transform: translateX(100%);
+  @include transition(transform);
 
   overflow-y: auto;
 
