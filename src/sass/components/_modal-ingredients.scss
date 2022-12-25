@@ -13,6 +13,9 @@
     max-width: 575px;
     max-height: 996px;
   }
+  @media screen and (min-width: 1200px) {
+    height: 996px;
+  }
 }
 .modal__title {
   font-family: var(--font-secondary);
