@@ -30,6 +30,10 @@
   }
 }
 
+.navigation {
+  padding-bottom: 20px;
+}
+
 .nav_link {
   padding: 11px 0;
   font-weight: 700;
@@ -44,15 +48,13 @@
   }
 }
 
+.icon-menu {
+  fill: var(--text-white-color);
 
-
-// .icon-menu-b {
-//   fill: var(--text-white-color)
-//   fill:red;
-// }
-// .icon-menu:hover {
-//   fill: black;
-// }
+  &:hover {
+    fill: var(--accent-clr);
+  }
+}
 
 .btn-wrap {
   display: none;
