@@ -2,7 +2,7 @@
   background-color: var(--bg-main-clr);
   padding-bottom: 64px;
 
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767.98px) {
     padding-bottom: 32px;
   }
 
@@ -52,7 +52,7 @@
 }
 
 .advantages__item:not(:last-child) {
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 16px;
   }
 }
