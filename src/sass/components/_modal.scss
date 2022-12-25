@@ -82,5 +82,11 @@
   width: 25px;
   height: 25px;
   fill: #444;
+  @include transition(fill);
   cursor: pointer;
+
+  :hover,
+  :focus {
+    fill: var(--btn-hover-focus-bg-clr);
+  }
 }
