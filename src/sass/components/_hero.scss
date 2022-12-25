@@ -81,7 +81,7 @@
   transform: translateX(-50%);
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
+  width: 480px;
   height: 100%;
 
   @media screen and (min-width: 768px){
@@ -94,8 +94,10 @@
 
 .hero__img-dots {
   position: absolute;
-  right: 0;
+  right: 50%;
   bottom: 0;
+  transform: translateX(50%);
+  transform-origin: center;
   animation-name: opacity;
   animation-duration: 3s;
   animation-timing-function: ease;
