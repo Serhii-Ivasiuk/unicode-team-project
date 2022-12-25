@@ -53,3 +53,23 @@
     document.body.classList.toggle('no-scroll');
   }
 })();
+
+// modal-franchise
+
+(() => {
+  const refs = {
+    openBtnModalFranchise: document.querySelector(
+      '[data-modal-open-franchise]'
+    ),
+    closeBtnModalFranchise: document.querySelector(
+      '[data-modal-close-franchise]'
+    ),
+  };
+
+  refs.openBtnModalFranchise.addEventListener('click', toggleModal);
+  refs.closeBtnModalFranchise.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle('no-scroll');
+  }
+})();
