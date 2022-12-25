@@ -158,6 +158,7 @@
   &:hover,
   &:focus {
     text-decoration: underline;
+    color: var(--btn-hover-focus-bg-clr);
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -207,6 +208,7 @@
   &:hover,
   &:focus {
     text-decoration: underline;
+    color: #ff90a2;
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
