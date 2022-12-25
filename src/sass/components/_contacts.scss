@@ -161,6 +161,7 @@
   &:hover,
   &:focus {
     text-decoration: underline;
+    color: var(--btn-hover-focus-bg-clr);
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -210,6 +211,7 @@
   &:hover,
   &:focus {
     text-decoration: underline;
+    color: rgb(255, 144, 162);
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -223,12 +225,11 @@
 
 .contacts-location__phone {
   margin-bottom: 6px;
-  
+
   @media screen and (min-width: 768px) {
     margin-bottom: 4px;
   }
 }
-
 
 // btn
 .contacts-btn {
