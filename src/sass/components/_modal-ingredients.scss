@@ -118,13 +118,21 @@
 .ingredients-list__item--position {
   margin-right: auto;
 }
+.modal-form__group {
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+.modal-form-wrapper__i{
+  margin-bottom: 16px;
+}
 .modal-form-wrapper__field {
   width: 85%;
   height: 42px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--bg-main-clr);
   border-radius: 10px;
-  margin-bottom: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -144,7 +152,6 @@
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--bg-main-clr);
   border-radius: 10px;
-  margin-bottom: 24px;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;

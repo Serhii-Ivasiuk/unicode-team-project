@@ -169,6 +169,18 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+.modal-form__group {
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+.modal-form-wrapper{
+  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+}
 
 .checkbox-input {
   // appearance: none;
