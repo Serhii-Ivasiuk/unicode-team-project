@@ -1,6 +1,4 @@
 .about {
-  max-width: 1200px;
-  margin: 0 auto;
   @include section(60px, 50px);
 
   background-color: var(--bg-main-clr);
@@ -40,6 +38,7 @@
   font-family: var(--font-secondary);
   text-align: center;
   text-transform: uppercase;
+  font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.04em;
 
@@ -177,6 +176,7 @@
 
   font-size: 12px;
   line-height: 1.8;
+  letter-spacing: 0.04em;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;

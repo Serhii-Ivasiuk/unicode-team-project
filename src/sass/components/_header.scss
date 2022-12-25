@@ -1,7 +1,5 @@
 .header {
   background-color: var(--bg-main-clr);
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .header-container {
@@ -14,37 +12,13 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 28px;
+    padding-top: 8px;
   }
 }
 
 .logo {
   margin-right: auto;
 }
-
-    // width: 40px;
-    // height: 37px;
-
-  // @media screen and (min-width: 768px) {
-  //   width: 48px;
-  //   height: 44px;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   width: 60px;
-  //   height: 65px;
-  // }
-
-
-// .logo__icon {
-//   height: 100%;
-//   width: auto;
-//   fill: var(--accent-clr);
-// }
-
-
-
-
 
 .nav_list {
   display: none;

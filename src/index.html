@@ -6,22 +6,27 @@
     <title>Page title</title>
     <!-- favicon -->
     <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="./images/favicon96.png"
+      href="./images/favicon/favicon96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./images/favicon/favicon64.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon16.png"
+      href="./images/favicon/favicon32.png"
     />
     <title>Ice Cream</title>
     <!-- fonts -->
@@ -38,11 +43,6 @@
     />
     <!-- custom styles -->
     <link rel="stylesheet" href="./sass/index.scss" />
-    <style>
-      input[type='checkbox'] {
-        display: none;
-      }
-    </style>
     <!-- scrypts -->
     <script type="module" src="./index.js"></script>
   </head>
@@ -64,7 +64,7 @@
       <include src="./partials/footer.html"></include>
     </div>
     <!-- buttons -->
-    <include src="./partials/buttons.html"></include>
+    <!-- <include src="./partials/buttons.html"></include> -->
     <!-- mobile-menu -->
     <include src="./partials/mobile-menu.html"></include>
     <!-- modals -->
@@ -73,6 +73,7 @@
         class="modal__cross js-modal-close"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
+        data-modal-close-ingredients
       >
         <path
           d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
@@ -156,8 +157,8 @@
               id="user_name"
               required
               placeholder="Name"
-              pattern="[a-z]{1,30}"
-              title="Username should only contain lowercase english letters. e.g. john"
+              pattern="[A-z]{1,30}"
+              title="Username should only contain english letters. e.g. John"
             />
           </div>
           <label class="modal-form__label" for="user_phone"></label>
@@ -184,7 +185,7 @@
         </div>
         <button
           class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
-          type="button"
+          type="submit"
         >
           <span class="btn__text">Submit</span>
         </button>
@@ -195,6 +196,7 @@
         class="modal__cross js-modal-close"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
+        data-modal-close-franchise
       >
         <path
           d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
@@ -221,8 +223,8 @@
               id="user_name"
               required
               placeholder="Name"
-              pattern="[a-z]{1,30}"
-              title="Username should only contain lowercase english letters. e.g. john"
+              pattern="[A-z]{1,30}"
+              title="Username should only contain english letters. e.g. John"
             />
           </div>
           <label class="modal-form__label" for="user_phone"></label>
@@ -262,7 +264,7 @@
         </div>
         <button
           class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
-          type="button"
+          type="submit"
         >
           <span class="btn__text">Submit</span>
         </button>
@@ -273,6 +275,7 @@
         class="modal__cross js-modal-close"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
+        data-modal-close-location
       >
         <path
           d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
@@ -319,6 +322,7 @@
         class="modal__cross js-modal-close"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
+        data-modal-close-read-more
       >
         <path
           d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
@@ -346,51 +350,74 @@
         class="modal__cross js-modal-close"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
+        data-modal-close-product-card
       >
         <path
           d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
         />
       </svg>
       <h3 class="modal-product-card__title">Buy now</h3>
-      <ul class="modal-product-card-list">
-        <li
-          class="modal-product-card-list__item modal-product-card-list__item--ice-cream"
-        >
-          <div
-            class="product-card-list__circle product-card-list__circle--ice-cream"
-          ></div>
-          <p class="product-card-list__p">Ice cream</p>
-          <div class="checkbox">
-            <input type="checkbox" id="ice-cream" />
-            <label for="ice-cream" class="text"></label>
-          </div>
-        </li>
-        <li
-          class="modal-product-card-list__item modal-product-card-list__item--ice-coffee"
-        >
-          <div
-            class="product-card-list__circle product-card-list__circle--ice-coffee"
-          ></div>
-          <p class="product-card-list__p">Ice coffee</p>
-          <div class="checkbox">
-            <input type="checkbox" id="ice-coffee" />
-            <label for="ice-coffee" class="text"></label>
-          </div>
-        </li>
-        <li
-          class="modal-product-card-list__item modal-product-card-list__item--milkshake"
-        >
-          <div
-            class="product-card-list__circle product-card-list__circle--milkshake"
-          ></div>
-          <p class="product-card-list__p">Milkshake</p>
-          <div class="checkbox">
-            <input type="checkbox" id="milkshake" />
-            <label for="milkshake" class="text"></label>
-          </div>
-        </li>
-      </ul>
       <form class="modal-form" name="modal_form">
+        <ul class="modal-product-card-list">
+          <li
+            class="modal-product-card-list__item modal-product-card-list__item--ice-cream"
+          >
+            <label class="checkbox-label" for="ice-cream" class="text">
+              <div class="checkbox">
+                <div
+                  class="product-card-list__circle product-card-list__circle--ice-cream"
+                ></div>
+                <div class="input__wrap">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="ice-cream"
+                    required
+                    title="Username should only contain english letters. e.g. John"
+                  />
+                  <p class="product-card-list__p">Ice cream</p>
+                </div>
+              </div>
+            </label>
+          </li>
+          <li
+            class="modal-product-card-list__item modal-product-card-list__item--ice-coffee"
+          >
+            <div
+              class="product-card-list__circle product-card-list__circle--ice-coffee"
+            ></div>
+            <p class="product-card-list__p">Ice coffee</p>
+            <div class="checkbox">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                id="ice-coffee"
+                required
+                title="Username should only contain english letters. e.g. John"
+              />
+              <label for="ice-coffee" class="text"></label>
+            </div>
+          </li>
+          <li
+            class="modal-product-card-list__item modal-product-card-list__item--milkshake"
+          >
+            <div
+              class="product-card-list__circle product-card-list__circle--milkshake"
+            ></div>
+            <p class="product-card-list__p">Milkshake</p>
+            <div class="checkbox">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                id="milkshake"
+                required
+                title="Username should only contain english letters. e.g. John"
+              />
+              <label for="milkshake" class="text"></label>
+            </div>
+          </li>
+        </ul>
+
         <div class="modal-form__group" role="group">
           <label class="modal-form__label" for="user_name"></label>
           <div class="modal-form-wrapper">
@@ -401,8 +428,8 @@
               id="user_name"
               required
               placeholder="Name"
-              pattern="[a-z]{1,30}"
-              title="Username should only contain lowercase english letters. e.g. john"
+              pattern="[A-z]{1,30}"
+              title="Username should only contain english letters. e.g. John"
             />
           </div>
           <label class="modal-form__label" for="user_phone"></label>
@@ -427,15 +454,16 @@
             placeholder="Comment"
           ></textarea>
         </div>
+
         <button
           class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
-          type="button"
+          type="submit"
         >
           <span class="btn__text">Submit</span>
         </button>
       </form>
     </div>
-    <div class="overlay js-overlay-modal"></div>
+    <div class="overlay js-overlay-modal is-hidden"></div>
     <!-- scripts -->
     <!-- modal -->
     <script src="./js/modal.js"></script>
@@ -453,5 +481,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
     ></script>
     <script type="module" src="./js/swiper-slider.js"></script>
+    <!-- body-no-scroll -->
+    <script type="module" src="./js/body-no-scroll.js"></script>
   </body>
 </html>
