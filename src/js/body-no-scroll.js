@@ -35,3 +35,21 @@
     document.body.classList.toggle('no-scroll');
   }
 })();
+
+// modal-location
+
+(() => {
+  const refs = {
+    openBtnModalLocation: document.querySelector('[data-modal-open-location]'),
+    closeBtnModalLocation: document.querySelector(
+      '[data-modal-close-location]'
+    ),
+  };
+
+  refs.openBtnModalLocation.addEventListener('click', toggleModal);
+  refs.closeBtnModalLocation.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle('no-scroll');
+  }
+})();
