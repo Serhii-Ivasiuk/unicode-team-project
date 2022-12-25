@@ -6,6 +6,7 @@
   position: absolute;
   top: 16px;
   right: 20px;
+  color: var(--text-white-color);
 }
 
 .menu-toggle {
@@ -15,6 +16,7 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 32px;
+    padding-bottom: 5px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -23,6 +25,10 @@
 }
 
 .menu-toggle-close {
+  &:hover,
+  &:focus {
+    color: var(--accent-clr);
+  }
   @media screen and (min-width: 768px) {
     top: 32px;
     right: 32px;
@@ -34,7 +40,7 @@
 }
 
 .icon-close {
-  fill: #ffff;
+  fill: currentColor;
 }
 
 .menu-container {

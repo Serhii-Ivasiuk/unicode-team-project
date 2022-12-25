@@ -4,7 +4,7 @@
 
 .header-container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   padding-top: 12px;
 
   @media screen and (min-width: 768px) {
@@ -30,6 +30,10 @@
   }
 }
 
+.navigation {
+  padding-bottom: 13px;
+}
+
 .nav_link {
   padding: 11px 0;
   font-weight: 700;
@@ -44,10 +48,33 @@
   }
 }
 
+// .icon-menu {
+//   fill: var(--text-white-color);
+
+//   &:hover,
+//   &:focus {
+//     fill: var(--accent-clr);
+//   }
+// }
+
 .btn-wrap {
   display: none;
+  padding-bottom: 3px;
 
   @media screen and (min-width: 768px) {
-    display: inline-block;
+    display: flex;
   }
+}
+
+.menu-toggle {
+  color: var(--text-white-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-clr);
+  }
+}
+
+.icon-menu {
+  fill: currentColor;
 }
