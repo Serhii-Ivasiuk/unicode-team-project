@@ -10,4 +10,17 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
+
+  // AutoHeight
+  autoHeight: true,
+
+  //
+  slideToClickedSlide: true,
+
+  // Effect
+  effect: 'fade',
+
+  fadeEffect: {
+    crossFade: true,
+  },
 });
