@@ -46,9 +46,6 @@
 }
 
 .gallery-thumb {
-  margin: 0 auto;
-  overflow: hidden;
-
   @media screen and (max-width: 767px) {
     max-width: 440px;
   }
@@ -98,13 +95,13 @@
   0% {
     opacity: 1;
   }
-  28% {
+  13% {
     opacity: 1;
   }
-  33% {
+  17% {
     opacity: 0;
   }
-  94% {
+  96% {
     opacity: 0;
   }
   100% {
@@ -116,16 +113,25 @@
   animation-name: cf4FadeInOut;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-direction: normal;
 }
 
 #cf4a img:nth-of-type(1) {
-  animation-delay: 4s;
+  animation-delay: 10s;
 }
 #cf4a img:nth-of-type(2) {
-  animation-delay: 2s;
+  animation-delay: 8s;
 }
 #cf4a img:nth-of-type(3) {
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(4) {
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(5) {
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(6) {
   animation-delay: 0s;
 }
