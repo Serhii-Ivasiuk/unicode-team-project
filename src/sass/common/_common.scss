@@ -47,7 +47,10 @@ body {
 // castom cursor
 a,
 button,
-summary::after {
+summary::after,
+.checkbox,
+.checkbox-label,
+.modal-product-card-list__item {
   cursor: url('../images/cursor-pointer.svg'), pointer;
 }
 
