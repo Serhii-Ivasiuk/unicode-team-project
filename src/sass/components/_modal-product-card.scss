@@ -171,12 +171,7 @@
   border-bottom-right-radius: 15px;
 }
 .checkbox-input:checked ~ .product-card-list__p--ice-cream {
-  background: linear-gradient(
-      0deg,
-      rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
-    #d9d9d9;
+  background-color: #96af8c;
 }
 .checkbox-input:checked ~ .product-card-list__p--ice-coffee {
   background: linear-gradient(
