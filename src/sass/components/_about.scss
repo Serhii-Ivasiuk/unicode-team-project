@@ -1,12 +1,13 @@
 .about {
-  @include section(60px, 72px);
+  @include section(60px, 50px);
+
   background-color: var(--bg-main-clr);
 
   @media screen and (min-width: 768px) {
     @include section(60px, 86px);
   }
   @media screen and (min-width: 1200px) {
-    @include section(60px, 99px);
+    @include section(60px, 100px);
   }
 }
 .section__label {
@@ -37,6 +38,7 @@
   font-family: var(--font-secondary);
   text-align: center;
   text-transform: uppercase;
+  font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.04em;
 
@@ -59,7 +61,7 @@
 }
 .about-img {
   width: 280px;
-  min-height: 280px;
+  height: 280px;
 
   position: absolute;
 
@@ -107,7 +109,7 @@
     }
     // Desktop screen
     @media screen and (min-width: 1200px) {
-      min-width: 490px;
+      width: 490px;
       height: 490px;
       margin-top: 39px;
 
@@ -131,11 +133,11 @@
   }
 }
 .img-wrap {
-  min-width: 280px;
+  width: 280px;
   height: 280px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 62px;
 
   position: relative;
 
@@ -163,7 +165,7 @@
     text-align: left;
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-right: 104px;
   }
 }
@@ -174,6 +176,7 @@
 
   font-size: 12px;
   line-height: 1.8;
+  letter-spacing: 0.04em;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;
@@ -184,6 +187,7 @@
 
   &-2 {
     @media screen and (min-width: 320px) and (max-width: 767.97px) {
+      margin-bottom: 10px;
       line-height: 1.6;
     }
     @media screen and (min-width: 1200px) {

@@ -6,22 +6,27 @@
     <title>Page title</title>
     <!-- favicon -->
     <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="./images/favicon96.png"
+      href="./images/favicon/favicon96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./images/favicon/favicon64.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon16.png"
+      href="./images/favicon/favicon32.png"
     />
     <title>Ice Cream</title>
     <!-- fonts -->
@@ -50,25 +55,27 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- header -->
-    <include src="./partials/header.html"></include>
-    <!-- main -->
-    <main>
-      <include src="./partials/hero.html"></include>
-      <include src="./partials/products.html"></include>
-      <include src="./partials/about.html"></include>
-      <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/customer-reviews.html"></include>
-      <include src="./partials/contacts.html"></include>
-    </main>
-    <!-- footer -->
-    <include src="./partials/footer.html"></include>
+    <div class="page">
+      <!-- header -->
+      <include src="./partials/header.html"></include>
+      <!-- main -->
+      <main>
+        <include src="./partials/hero.html"></include>
+        <include src="./partials/products.html"></include>
+        <include src="./partials/about.html"></include>
+        <include src="./partials/advantages.html"></include>
+        <include src="./partials/gallery.html"></include>
+        <include src="./partials/customer-reviews.html"></include>
+        <include src="./partials/contacts.html"></include>
+      </main>
+      <!-- footer -->
+      <include src="./partials/footer.html"></include>
+    </div>
     <!-- buttons -->
-    <include src="./partials/buttons.html"></include>
+    <!-- <include src="./partials/buttons.html"></include> -->
     <!-- mobile-menu -->
     <include src="./partials/mobile-menu.html"></include>
-    <!-- modal-ingredients -->
+    <!-- modals -->
     <div class="modal modal-ingredients" data-modal="ingredients">
       <svg
         class="modal__cross js-modal-close"
@@ -157,8 +164,8 @@
               id="user_name"
               required
               placeholder="Name"
-              pattern="[a-z]{1,30}"
-              title="Username should only contain lowercase english letters. e.g. john"
+              pattern="[A-z]{1,30}"
+              title="Username should only contain english letters. e.g. John"
             />
           </div>
           <label class="modal-form__label" for="user_phone"></label>
@@ -185,7 +192,7 @@
         </div>
         <button
           class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
-          type="button"
+          type="submit"
         >
           <span class="btn__text">Submit</span>
         </button>
@@ -222,8 +229,8 @@
               id="user_name"
               required
               placeholder="Name"
-              pattern="[a-z]{1,30}"
-              title="Username should only contain lowercase english letters. e.g. john"
+              pattern="[A-z]{1,30}"
+              title="Username should only contain english letters. e.g. John"
             />
           </div>
           <label class="modal-form__label" for="user_phone"></label>
@@ -263,7 +270,7 @@
         </div>
         <button
           class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
-          type="button"
+          type="submit"
         >
           <span class="btn__text">Submit</span>
         </button>
@@ -336,7 +343,6 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
-      <!-- <video class="modal-read-more__video" src=""></video> -->
       <p class="modal-read-more__p">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
@@ -403,8 +409,8 @@
               id="user_name"
               required
               placeholder="Name"
-              pattern="[a-z]{1,30}"
-              title="Username should only contain lowercase english letters. e.g. john"
+              pattern="[A-z]{1,30}"
+              title="Username should only contain english letters. e.g. John"
             />
           </div>
           <label class="modal-form__label" for="user_phone"></label>
@@ -431,7 +437,7 @@
         </div>
         <button
           class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
-          type="button"
+          type="submit"
         >
           <span class="btn__text">Submit</span>
         </button>
@@ -439,7 +445,9 @@
     </div>
     <div class="overlay js-overlay-modal"></div>
     <!-- scripts -->
+    <!-- modal -->
     <script src="./js/modal.js"></script>
+    <!-- mobile menu -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
