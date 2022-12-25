@@ -1,45 +1,43 @@
 .up__box {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 1000;
-    @media screen and (min-width:768px) {
-      bottom: 50px;
-      right: 50px;
-    }
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  @media screen and (min-width: 768px) {
+    bottom: 50px;
+    right: 50px;
   }
-  
-  .up__button {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background: var(--bg-product-two-clr);
-    text-align: center;
-    display: block;
-    line-height: 50px;
-    border-radius: 50%;
-    transition: var(--anim-main);
-    fill: rgba(255, 255, 255, 0.5);
-    
-    &:hover {
-      fill: rgba(255, 255, 255, 1);
-      
-    }
-    &:active,
-    &:focus {
-      background: var(--input-border-clr);
-      box-shadow: 0px 10px 20px 5px rgba(188, 243, 87, 0.699);
-      transform: translateY(-10px);
-    }
+}
+
+.up__button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: var(--bg-product-two-clr);
+  text-align: center;
+  display: block;
+  line-height: 50px;
+  border-radius: 50%;
+  transition: var(--anim-main);
+  fill: rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    fill: rgba(255, 255, 255, 1);
   }
-  
-  .up__arrow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    
+  &:active,
+  &:focus {
+    // background: var(--input-border-clr);
+    box-shadow: 0px 10px 20px 1px rgba(248, 211, 78, 0.7);
+    // transform: translateY(-10px);
   }
+}
+
+.up__arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
