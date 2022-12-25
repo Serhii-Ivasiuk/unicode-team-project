@@ -73,3 +73,33 @@
     document.body.classList.toggle('no-scroll');
   }
 })();
+
+// modal-ingredients
+
+(() => {
+  const refs = {
+    openBtnModalIngredients1: document.querySelector(
+      '[data-modal-open-ingredients-1]'
+    ),
+    openBtnModalIngredients2: document.querySelector(
+      '[data-modal-open-ingredients-2]'
+    ),
+    openBtnModalIngredients3: document.querySelector(
+      '[data-modal-open-ingredients-3]'
+    ),
+
+    closeBtnModalIngredients: document.querySelector(
+      '[data-modal-close-ingredients]'
+    ),
+  };
+
+  refs.openBtnModalIngredients1.addEventListener('click', toggleModal);
+  refs.openBtnModalIngredients2.addEventListener('click', toggleModal);
+  refs.openBtnModalIngredients3.addEventListener('click', toggleModal);
+
+  refs.closeBtnModalIngredients.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle('no-scroll');
+  }
+})();
