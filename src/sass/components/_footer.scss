@@ -1,39 +1,6 @@
 .footer {
-  margin: 0 auto;
   padding-bottom: 20px;
   background-color: var(--bg-main-clr);
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 12px;
-  }
-}
-
-.footer__wrap {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  &::after {
-    content: '';
-    display: block;
-    height: 1px;
-    position: absolute;
-    width: 100vw;
-    bottom: 62px;
-    left: 0;
-
-    background-color: #e1e1e1;
-
-    @media screen and (min-width: 768px) {
-      bottom: 38px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      left: 16px;
-      bottom: 32px;
-      max-width: 1167px;
-    }
-  }
 }
 
 .footer__container {
@@ -41,18 +8,17 @@
   flex-direction: column;
 }
 
-.footer__thumb {
+.footer__tumb {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  padding-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 44px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 72px;
+    padding-bottom: 60px;
   }
 }
 
@@ -62,7 +28,6 @@
   gap: 16px;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
     width: 280px;
   }
 
@@ -95,17 +60,14 @@
     @include fonts(48px, 59px, 700, 0.06em);
   }
   @media screen and (min-width: 1200px) {
-    @include fonts(58px, 71px, 700, 0.06em);
+    @include fonts(58px, 71px, 700, 0.04em);
   }
 }
 
 .footer-socials {
   display: flex;
   flex-direction: column;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 61px;
-  }
+  padding-top: 60px;
 
   @media screen and (min-width: 1200px) {
     padding-top: 18px;
@@ -115,16 +77,10 @@
 .footer-socials__list {
   display: flex;
   gap: 20px;
-  justify-content: flex-end;
-  margin-bottom: 20px;
+  margin-left: auto;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 34px;
     gap: 30px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 40px;
   }
 }
 
@@ -158,8 +114,13 @@
 
 .footer-communication {
   display: flex;
+  padding-top: 20px;
   gap: 3px;
-  justify-content: flex-end;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
 }
 
 .footer-communication_text {
@@ -184,18 +145,20 @@
   }
 }
 
-.footer-info {
+.foter-info {
   text-align: center;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 20px;
 }
 
-.footer-info_text {
-  @include fonts(14px, 21px, 700, 0.01em, false, var(--text-footer-clr));
+.foter-info_text {
+  @include fonts(14px, 21px, 700, 0.04em, false, var(--text-footer-clr));
 
   @media screen and (min-width: 768px) {
     display: inline;
-    @include fonts(14px, 26px, false, 0.02em);
+    @include fonts(14px, 26px);
   }
   @media screen and (min-width: 1200px) {
-    @include fonts(12px, 22px, false, 0.02em);
+    @include fonts(12px, 32px, false, 0.02em);
   }
 }
