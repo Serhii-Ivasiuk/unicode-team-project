@@ -47,14 +47,3 @@ body {
 .page {
   overflow: hidden;
 }
-
-// castom cursor
-a,
-button,
-summary::after {
-  cursor: url('../images/cursor-pointer.svg'), pointer;
-}
-
-body {
-  cursor: url('../images/cursor.svg'), auto;
-}
