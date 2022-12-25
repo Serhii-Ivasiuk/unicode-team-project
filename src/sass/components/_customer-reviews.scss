@@ -1,12 +1,12 @@
 .slider {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 
   @media screen and (min-width: 1268px) {
-    margin-bottom: 140px;
+    padding-bottom: 140px;
   }
 }
 
@@ -41,17 +41,19 @@
   width: 85px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
   border-radius: 44px;
 
   overflow: hidden;
 }
-
-.slider__review {
+.slider__wrap {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0 32px;
+}
+.slider__review {
+  // align-items: center;
+  // justify-content: center;
+  // margin: 0 auto;
+  min-width: 280px;
+  height: 100%;
 
   padding-left: 39px;
   padding-top: 35px;
@@ -65,8 +67,10 @@
   border-radius: 10px;
   color: var(--text-secondary-clr);
 
-  @media screen and (max-width: 479.99px) {
-    min-width: 280px;
+  flex-grow: 1;
+
+  @media screen and (min-width: 479.99px) {
+    width: 440px;
   }
 
   @media screen and (min-width: 768px) {
@@ -78,7 +82,7 @@
     padding-bottom: 28px;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1, 86;
+    line-height: 1.86;
 
     letter-spacing: 0.04em;
   }
@@ -108,7 +112,11 @@
 }
 
 .swiper .swiper-slide {
-  margin-bottom: 32px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .swiper .swiper-pagination {
