@@ -51,7 +51,8 @@
 .icon-menu {
   fill: var(--text-white-color);
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: var(--accent-clr);
   }
 }
