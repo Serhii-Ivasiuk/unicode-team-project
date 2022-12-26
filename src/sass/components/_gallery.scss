@@ -64,7 +64,9 @@
   position: relative;
   margin: 0 auto;
   overflow: hidden;
-
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  background-color: white;
+  
   @media screen and (max-width: 767.98px) {
     max-width: 440px;
     height: 130px;
