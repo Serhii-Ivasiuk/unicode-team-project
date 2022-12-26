@@ -5,14 +5,14 @@
 .header-container {
   display: flex;
   align-items: flex-end;
-  padding-top: 12px;
+  @include section(12px, 10px);
 
   @media screen and (min-width: 768px) {
-    padding-top: 20px;
+    @include section(20px, 10px);
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 8px;
+    @include section(8px, 10px);
   }
 }
 
