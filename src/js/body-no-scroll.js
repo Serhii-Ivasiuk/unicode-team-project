@@ -5,12 +5,16 @@
     openBtnModalProtuctCard: document.querySelector(
       '[data-modal-open-product-card]'
     ),
+    openBtnModalProtuctCardMenu: document.querySelector(
+      '[data-modal-open-product-card-menu]'
+    ),
     closeBtnModalProtuctCard: document.querySelector(
       '[data-modal-close-product-card]'
     ),
   };
 
   refs.openBtnModalProtuctCard.addEventListener('click', toggleModal);
+  refs.openBtnModalProtuctCardMenu.addEventListener('click', toggleModal);
   refs.closeBtnModalProtuctCard.addEventListener('click', toggleModal);
 
   function toggleModal() {
