@@ -346,3 +346,26 @@ inpur:focus {
     transform: scale(2.4) rotate(5deg);
   }
 } /*# sourceMappingURL=styles.css.map */
+
+// Margins fixes
+
+.modal-form-message,
+.modal-form-message-fr {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-form-wrapper {
+  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+}
+
+.modal-form-message,
+.modal-form-message-fr {
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}

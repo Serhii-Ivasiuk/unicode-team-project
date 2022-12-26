@@ -14,7 +14,7 @@
     max-height: 996px;
   }
   @media screen and (min-width: 1200px) {
-    height: auto;
+    // height: auto;
   }
 }
 .modal__title {
@@ -124,7 +124,6 @@
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--bg-main-clr);
   border-radius: 10px;
-  margin-bottom: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -144,7 +143,6 @@
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--bg-main-clr);
   border-radius: 10px;
-  margin-bottom: 24px;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
