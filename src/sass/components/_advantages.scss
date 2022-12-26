@@ -115,6 +115,10 @@
   color: var(--text-secondary-clr);
   margin-bottom: 16px;
 
+  @media screen and (max-width:767px) {
+    text-transform: uppercase;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: calc(59 / 48);
