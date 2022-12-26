@@ -16,62 +16,61 @@
       <li
         class="modal-product-card-list__item modal-product-card-list__item--ice-cream"
       >
-        <label class="checkbox-label" for="ice-cream" class="text">
+        <label class="checkbox-label text" for="ice-cream">
           <span class="checkbox">
-            <div
+            <span
               class="product-card-list__circle product-card-list__circle--ice-cream"
-            ></div>
-            <div class="input__wrap">
-              <input
-                class="checkbox-input"
-                type="checkbox"
-                id="ice-cream"
-                required
-                title="Username should only contain english letters. e.g. John"
-              />
-              <p class="product-card-list__p">Ice cream</p>
-            </div>
+            ></span>
+            <span class="input__wrap">
+              <input class="checkbox-input" type="checkbox" id="ice-cream" />
+              <span class="product-card-list__p product-card-list__p--ice-cream"
+                >Ice cream</span
+              >
+            </span>
           </span>
         </label>
       </li>
       <li
         class="modal-product-card-list__item modal-product-card-list__item--ice-coffee"
       >
-        <div
-          class="product-card-list__circle product-card-list__circle--ice-coffee"
-        ></div>
-        <p class="product-card-list__p">Ice coffee</p>
-        <div class="checkbox">
-          <input
-            class="checkbox-input"
-            type="checkbox"
-            id="ice-coffee"
-            required
-            title="Username should only contain english letters. e.g. John"
-          />
-          <label for="ice-coffee" class="text"></label>
-        </div>
+        <label class="checkbox-label text" for="ice-coffee">
+          <span class="checkbox">
+            <span
+              class="product-card-list__circle product-card-list__circle--ice-coffee"
+            ></span>
+            <span class="input__wrap">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                id="ice-coffee"
+                checked
+              />
+              <span
+                class="product-card-list__p product-card-list__p--ice-coffee"
+                >ice-coffee</span
+              >
+            </span>
+          </span>
+        </label>
       </li>
       <li
         class="modal-product-card-list__item modal-product-card-list__item--milkshake"
       >
-        <div
-          class="product-card-list__circle product-card-list__circle--milkshake"
-        ></div>
-        <p class="product-card-list__p">Milkshake</p>
-        <div class="checkbox">
-          <input
-            class="checkbox-input"
-            type="checkbox"
-            id="milkshake"
-            required
-            title="Username should only contain english letters. e.g. John"
-          />
-          <label for="milkshake" class="text"></label>
-        </div>
+        <label class="checkbox-label text" for="milkshake">
+          <span class="checkbox">
+            <span
+              class="product-card-list__circle product-card-list__circle--milkshake"
+            ></span>
+            <span class="input__wrap">
+              <input class="checkbox-input" type="checkbox" id="milkshake" />
+              <span class="product-card-list__p product-card-list__p--milkshake"
+                >milkshake</span
+              >
+            </span>
+          </span>
+        </label>
       </li>
     </ul>
-
     <div class="modal-form__group" role="group">
       <label class="modal-form__label" for="user_name"></label>
       <div class="modal-form-wrapper">
@@ -95,8 +94,8 @@
           id="user_phone"
           required
           placeholder="Phone"
-          pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
-          title="Phone number should be like +38(044)555-55-55"
+          pattern="^\+\d{2}\d{3}\d{3}\d{2}\d{2}$"
+          title="Phone number should be like +380445556677"
         />
       </div>
       <label class="modal-form__label" for="user_message"></label>

@@ -34,10 +34,10 @@
         media="(min-width: 768px)"
       />
       <source
-        srcset="./images/hero/img-3_320.png 1x, ./images/hero/img-3_640.png 2x"
+        srcset="./images/hero/img-3_480.png 1x, ./images/hero/img-3_960.png 2x"
         media="(max-width: 767px)"
       />
-      <img src="./images/hero/img-3_320.png" alt="Yellow dots background" />
+      <img src="./images/hero/img-3_480.png" alt="Yellow dots background" />
     </picture>
     <picture class="hero__img-cone">
       <source
@@ -67,11 +67,11 @@
     </picture>
     <ul class="hero__stats">
       <li class="hero__stats-item">
-        <span class="hero__stats-number">16</span>
+        <span data-digits-counter class="hero__stats-number">16</span>
         <p class="hero__stats-text">cafes</p>
       </li>
       <li class="hero__stats-item">
-        <span class="hero__stats-number">23</span>
+        <span data-digits-counter class="hero__stats-number">23</span>
         <p class="hero__stats-text">food trucks</p>
       </li>
     </ul>
@@ -82,3 +82,4 @@
     </details>
   </div>
 </section>
+<script src="./js/digitscounter.js"></script>
