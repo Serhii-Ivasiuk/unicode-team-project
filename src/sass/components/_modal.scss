@@ -369,3 +369,9 @@ inpur:focus {
     margin-bottom: 32px;
   }
 }
+
+// mobile-devices scroll add
+.modal {
+  max-height: 95vh;
+  overflow-y: auto;
+}
