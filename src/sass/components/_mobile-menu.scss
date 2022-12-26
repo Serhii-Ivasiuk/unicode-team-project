@@ -42,6 +42,10 @@
 .icon-close {
   fill: currentColor;
 }
+.menu-toggle-close:hover > .icon-close,
+.menu-toggle-close:focus > .icon-close {
+  fill: var(--accent-clr);
+}
 
 .menu-container {
   display: flex;

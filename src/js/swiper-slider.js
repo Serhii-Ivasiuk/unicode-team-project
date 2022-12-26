@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 20,
-
+  
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
