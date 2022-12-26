@@ -71,3 +71,7 @@ body {
   overflow-y: auto;
   pointer-events: none;
 }
+
+.bg-fix {
+  background-color: var(--bg-main-clr);
+}
