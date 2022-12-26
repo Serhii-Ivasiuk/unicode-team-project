@@ -1,7 +1,7 @@
 .modal-product-card {
   padding: 28px;
   overflow-y: auto;
-  height: 100vh;
+  height: 600px;
   @media screen and (max-width: 479px) {
     padding-top: 60px;
   }
@@ -49,7 +49,7 @@
   position: relative;
 }
 .modal-product-card-list__item:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 80px;
   }
 }
@@ -158,7 +158,8 @@
 .product-card-list__p {
   display: block;
   // justify-content: center;
-  padding-top: 96px;
+  padding-top: 76px;
+  padding-bottom: 20px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -169,13 +170,24 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-
-.checkbox-input {
-  // appearance: none;
-}
-
-.checkbox-input:checked ~ .product-card-list__p {
+.checkbox-input:checked ~ .product-card-list__p--ice-cream {
   background-color: #96af8c;
+}
+.checkbox-input:checked ~ .product-card-list__p--ice-coffee {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+}
+.checkbox-input:checked ~ .product-card-list__p--milkshake {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
 }
 
 .input__wrap {

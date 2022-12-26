@@ -1,0 +1,48 @@
+<div class="modal modal-location" data-modal="location">
+  <button
+    type="button"
+    class="button-svg js-modal-close"
+    data-modal-close-location
+  >
+    <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+      />
+    </svg>
+  </button>
+  <h3 class="modal-location__title">Our Locations</h3>
+  <picture class="modal-location__picture">
+    <!-- Tablet screen -->
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/location/location-tablet@1x-min.jpg 1x,
+        ./images/location/location-tablet@2x-min.jpg 2x
+      "
+      type="image/jpg"
+    />
+    <!-- Mobile screen -->
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./images/location/location-mobile@1x-min.jpg 1x,
+        ./images/location/location-mobile@2x-min.jpg 2x
+      "
+      type="image/jpg"
+    />
+    <img
+      class=""
+      src="./images/location/location-tablet@1x-min.jpg"
+      alt="Ольга Рєпіна"
+      width="448"
+      height="260"
+    />
+  </picture>
+  <a
+    class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
+    href="https://goo.gl/maps/uUSggjNBHGQR7PYW9"
+    target="_blank"
+    rel="noopener noreferrer nofollow"
+    >Open map</a
+  >
+</div>

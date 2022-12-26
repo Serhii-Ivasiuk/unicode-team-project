@@ -2,7 +2,7 @@
   padding: 30px;
   overflow-y: auto;
   height: 100vh;
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 479.98px) {
     padding-top: 60px;
   }
   @media screen and (min-width: 480px) {
@@ -60,6 +60,7 @@
   line-height: 140%;
   color: var(--text-main-clr);
   padding: 11px 11px;
+  resize: none;
 
   @media screen and (min-width: 480px) {
     width: 315px;

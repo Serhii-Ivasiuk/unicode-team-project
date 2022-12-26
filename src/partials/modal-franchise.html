@@ -1,0 +1,80 @@
+<div class="modal modal-franchise" data-modal="franchise">
+  <button
+    type="button"
+    class="button-svg js-modal-close"
+    data-modal-close-franchise
+  >
+    <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+      />
+    </svg>
+  </button>
+  <h3 class="modal-franchise__title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h3>
+  <p class="modal-franchise-p">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+  <form class="modal-form" name="modal_form">
+    <div class="modal-form__group" role="group">
+      <label class="modal-form__label" for="user_name"></label>
+      <div class="modal-form-wrapper">
+        <input
+          class="modal-form-wrapper__field"
+          type="text"
+          name="user_name"
+          id="user_name"
+          required
+          placeholder="Name"
+          pattern="[A-z]{1,30}"
+          title="Username should only contain english letters. e.g. John"
+        />
+      </div>
+      <label class="modal-form__label" for="user_phone"></label>
+      <div class="modal-form-wrapper">
+        <input
+          class="modal-form-wrapper__field"
+          type="tel"
+          name="user_phone"
+          id="user_phone"
+          required
+          placeholder="Phone"
+          pattern="^\+\d{2}\d{3}\d{3}\d{2}\d{2}$"
+          title="Phone number should be like +380445556677"
+        />
+      </div>
+      <label class="modal-form__label" for="user_mail"></label>
+      <div class="modal-form-wrapper">
+        <input
+          class="modal-form-wrapper__field"
+          type="email"
+          name="user_mail"
+          id="user_mail"
+          required
+          placeholder="Email"
+          pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+          title="Email should contain @ and dot"
+        />
+      </div>
+      <label class="modal-form__label" for="user_message"></label>
+      <textarea
+        class="modal-form-message-fr"
+        name="user_message"
+        id="user_message"
+        rows="4"
+        placeholder="Comment"
+      ></textarea>
+    </div>
+    <button
+      class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
+      type="submit"
+    >
+      <span class="btn__text">Submit</span>
+    </button>
+  </form>
+</div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>100% NATURAL ICE-CREAM</title>
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -62,411 +62,56 @@
         <include src="./partials/gallery.html"></include>
         <include src="./partials/customer-reviews.html"></include>
         <include src="./partials/contacts.html"></include>
+        <include src="./partials/modal-ingredients.html"></include>
+        <include src="./partials/modal-franchise.html"></include>
+        <include src="./partials/modal-location.html"></include>
+        <include src="./partials/modal-read-more.html"></include>
+        <include src="./partials/modal-product-card.html"></include>
       </main>
       <!-- footer -->
       <include src="./partials/footer.html"></include>
     </div>
+    <!-- up arrow -->
+    <include src="./partials/uparrow.html"></include>
     <!-- buttons -->
     <!-- <include src="./partials/buttons.html"></include> -->
     <!-- mobile-menu -->
     <include src="./partials/mobile-menu.html"></include>
-    <!-- modals -->
-    <div class="modal modal-ingredients" data-modal="ingredients">
-      <svg
-        class="modal__cross js-modal-close"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        data-modal-close-ingredients
-      >
-        <path
-          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-        />
-      </svg>
-      <h3 class="modal__title">Chololate icecream</h3>
-      <div class="modal-ingredients-circle">
-        <picture class="modal-ingredients-icecream-img">
-          <source
-            srcset="
-              ./images/modal-ingredients/img_132.png 1x,
-              ./images/modal-ingredients/img_264.png 2x
-            "
-            type="image/png"
-          />
-          <img
-            class=""
-            src="./images/modal-ingredients/img_132.png"
-            alt="Chololate icecream"
-            width="132"
-            height="132"
-          />
-        </picture>
+    <!-- modal-overlay -->
+    <div class="overlay js-overlay-modal is-hidden">
+      <div class="wrap">
+        <svg class="svg" width="96" height="96">
+          <use href="./images/icons2.svg#icon-cone"></use>
+        </svg>
+        <svg class="svg" width="96" height="96">
+          <use href="./images/icons2.svg#icon-popsicle"></use>
+        </svg>
+        <svg class="svg" width="96" height="96">
+          <use href="./images/icons2.svg#icon-ice-cream"></use>
+        </svg>
+        <svg class="svg" width="96" height="96">
+          <use href="./images/icons2.svg#icon-cone"></use>
+        </svg>
+        <svg class="svg" width="96" height="96">
+          <use href="./images/icons2.svg#icon-popsicle"></use>
+        </svg>
+        <svg class="svg" width="96" height="96">
+          <use href="./images/icons2.svg#icon-ice-cream"></use>
+        </svg>
+        <svg class="svg" width="96" height="96">
+          <use href="./images/icons2.svg#icon-cone"></use>
+        </svg>
+        <svg class="svg" width="96" height="96">
+          <use href="./images/icons2.svg#icon-popsicle"></use>
+        </svg>
+        <svg class="svg" width="96" height="96">
+          <use href="./images/icons2.svg#icon-ice-cream"></use>
+        </svg>
+        <svg class="svg" width="96" height="96">
+          <use href="./images/icons2.svg#icon-cone"></use>
+        </svg>
       </div>
-      <ul class="macros-list">
-        <li class="macros-list__item">
-          <div class="macros-wrapper">
-            <div class="macros-wrapper__item">320</div>
-            kcal
-          </div>
-        </li>
-        <li class="macros-list__item">
-          <div class="macros-wrapper">
-            <div class="macros-wrapper__item">4g</div>
-            Prote.
-          </div>
-        </li>
-        <li class="macros-list__item">
-          <div class="macros-wrapper">
-            <div class="macros-wrapper__item">8,2g</div>
-            Fats
-          </div>
-        </li>
-        <li class="macros-list__item">
-          <div class="macros-wrapper">
-            <div class="macros-wrapper__item">40,4g</div>
-            Carbs
-          </div>
-        </li>
-      </ul>
-      <h3 class="ingredients-title">Ingredients</h3>
-      <ul class="ingredients-list">
-        <li class="ingredients-list__item">
-          <span class="ingredients-list__item--position">Milk</span>100ml
-        </li>
-        <li class="ingredients-list__item">
-          <span class="ingredients-list__item--position">Belgian chocolate</span
-          >20g
-        </li>
-        <li class="ingredients-list__item">
-          <span class="ingredients-list__item--position">Cream</span>150ml
-        </li>
-        <li class="ingredients-list__item">
-          <span class="ingredients-list__item--position">Cocoa powder</span>30g
-        </li>
-        <li class="ingredients-list__item">
-          <span class="ingredients-list__item--position">Sugar</span>40g
-        </li>
-        <li class="ingredients-list__item">
-          <span class="ingredients-list__item--position">Vanilla sugar</span>10g
-        </li>
-      </ul>
-      <form class="modal-form" name="modal_form">
-        <div class="modal-form__group" role="group">
-          <label class="modal-form__label" for="user_name"></label>
-          <div class="modal-form-wrapper">
-            <input
-              class="modal-form-wrapper__field"
-              type="text"
-              name="user_name"
-              id="user_name"
-              required
-              placeholder="Name"
-              pattern="[A-z]{1,30}"
-              title="Username should only contain english letters. e.g. John"
-            />
-          </div>
-          <label class="modal-form__label" for="user_phone"></label>
-          <div class="modal-form-wrapper">
-            <input
-              class="modal-form-wrapper__field"
-              type="tel"
-              name="user_phone"
-              id="user_phone"
-              required
-              placeholder="Phone"
-              pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
-              title="Phone number should be like +38(044)555-55-55"
-            />
-          </div>
-          <label class="modal-form__label" for="user_message"></label>
-          <textarea
-            class="modal-form-message"
-            name="user_message"
-            id="user_message"
-            rows="4"
-            placeholder="Comment"
-          ></textarea>
-        </div>
-        <button
-          class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
-          type="submit"
-        >
-          <span class="btn__text">Submit</span>
-        </button>
-      </form>
     </div>
-    <div class="modal modal-franchise" data-modal="franchise">
-      <svg
-        class="modal__cross js-modal-close"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        data-modal-close-franchise
-      >
-        <path
-          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-        />
-      </svg>
-      <h3 class="modal-franchise__title">
-        Thank you for your interest in owning an Ice Cream shop
-      </h3>
-      <p class="modal-franchise-p">
-        Due to the overwhelming volume of franchise requests we are not
-        accepting new franchisee applications at this time. Once the application
-        process resumes, we will contact you for further information. Please
-        fill out the contact information below and we will reach out for
-        additional information. We appreciate your patience.
-      </p>
-      <form class="modal-form" name="modal_form">
-        <div class="modal-form__group" role="group">
-          <label class="modal-form__label" for="user_name"></label>
-          <div class="modal-form-wrapper">
-            <input
-              class="modal-form-wrapper__field"
-              type="text"
-              name="user_name"
-              id="user_name"
-              required
-              placeholder="Name"
-              pattern="[A-z]{1,30}"
-              title="Username should only contain english letters. e.g. John"
-            />
-          </div>
-          <label class="modal-form__label" for="user_phone"></label>
-          <div class="modal-form-wrapper">
-            <input
-              class="modal-form-wrapper__field"
-              type="tel"
-              name="user_phone"
-              id="user_phone"
-              required
-              placeholder="Phone"
-              pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
-              title="Phone number should be like +38(044)555-55-55"
-            />
-          </div>
-          <label class="modal-form__label" for="user_mail"></label>
-          <div class="modal-form-wrapper">
-            <input
-              class="modal-form-wrapper__field"
-              type="email"
-              name="user_mail"
-              id="user_mail"
-              required
-              placeholder="Email"
-              pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
-              title="Email should contain @ and dot"
-            />
-          </div>
-          <label class="modal-form__label" for="user_message"></label>
-          <textarea
-            class="modal-form-message-fr"
-            name="user_message"
-            id="user_message"
-            rows="4"
-            placeholder="Comment"
-          ></textarea>
-        </div>
-        <button
-          class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
-          type="submit"
-        >
-          <span class="btn__text">Submit</span>
-        </button>
-      </form>
-    </div>
-    <div class="modal modal-location" data-modal="location">
-      <svg
-        class="modal__cross js-modal-close"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        data-modal-close-location
-      >
-        <path
-          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-        />
-      </svg>
-      <h3 class="modal-location__title">Our Locations</h3>
-      <picture class="modal-location__picture">
-        <!-- Tablet screen -->
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/location/location-tablet@1x-min.jpg 1x,
-            ./images/location/location-tablet@2x-min.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <!-- Mobile screen -->
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/location/location-mobile@1x-min.jpg 1x,
-            ./images/location/location-mobile@2x-min.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <img
-          class=""
-          src="./images/location/location-tablet@1x-min.jpg"
-          alt="Ольга Рєпіна"
-          width="448"
-          height="260"
-        />
-      </picture>
-      <a
-        class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
-        href="https://goo.gl/maps/uUSggjNBHGQR7PYW9"
-        target="_blank"
-        rel="noopener noreferrer nofollow"
-        >Open map</a
-      >
-    </div>
-    <div class="modal modal-read-more" data-modal="read-more">
-      <svg
-        class="modal__cross js-modal-close"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        data-modal-close-read-more
-      >
-        <path
-          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-        />
-      </svg>
-      <h3 class="modal-read-more__title">How it’s made?</h3>
-      <iframe
-        class="modal-read-more__iframe"
-        width="224"
-        height="199"
-        src="https://www.youtube.com/embed/eeBZUUtkNBA"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p class="modal-read-more__p">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      </p>
-    </div>
-    <div class="modal modal-product-card" data-modal="product-card">
-      <svg
-        class="modal__cross js-modal-close"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        data-modal-close-product-card
-      >
-        <path
-          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-        />
-      </svg>
-      <h3 class="modal-product-card__title">Buy now</h3>
-      <form class="modal-form" name="modal_form">
-        <ul class="modal-product-card-list">
-          <li
-            class="modal-product-card-list__item modal-product-card-list__item--ice-cream"
-          >
-            <label class="checkbox-label" for="ice-cream" class="text">
-              <div class="checkbox">
-                <div
-                  class="product-card-list__circle product-card-list__circle--ice-cream"
-                ></div>
-                <div class="input__wrap">
-                  <input
-                    class="checkbox-input"
-                    type="checkbox"
-                    id="ice-cream"
-                    required
-                    title="Username should only contain english letters. e.g. John"
-                  />
-                  <p class="product-card-list__p">Ice cream</p>
-                </div>
-              </div>
-            </label>
-          </li>
-          <li
-            class="modal-product-card-list__item modal-product-card-list__item--ice-coffee"
-          >
-            <div
-              class="product-card-list__circle product-card-list__circle--ice-coffee"
-            ></div>
-            <p class="product-card-list__p">Ice coffee</p>
-            <div class="checkbox">
-              <input
-                class="checkbox-input"
-                type="checkbox"
-                id="ice-coffee"
-                required
-                title="Username should only contain english letters. e.g. John"
-              />
-              <label for="ice-coffee" class="text"></label>
-            </div>
-          </li>
-          <li
-            class="modal-product-card-list__item modal-product-card-list__item--milkshake"
-          >
-            <div
-              class="product-card-list__circle product-card-list__circle--milkshake"
-            ></div>
-            <p class="product-card-list__p">Milkshake</p>
-            <div class="checkbox">
-              <input
-                class="checkbox-input"
-                type="checkbox"
-                id="milkshake"
-                required
-                title="Username should only contain english letters. e.g. John"
-              />
-              <label for="milkshake" class="text"></label>
-            </div>
-          </li>
-        </ul>
-
-        <div class="modal-form__group" role="group">
-          <label class="modal-form__label" for="user_name"></label>
-          <div class="modal-form-wrapper">
-            <input
-              class="modal-form-wrapper__field"
-              type="text"
-              name="user_name"
-              id="user_name"
-              required
-              placeholder="Name"
-              pattern="[A-z]{1,30}"
-              title="Username should only contain english letters. e.g. John"
-            />
-          </div>
-          <label class="modal-form__label" for="user_phone"></label>
-          <div class="modal-form-wrapper">
-            <input
-              class="modal-form-wrapper__field"
-              type="tel"
-              name="user_phone"
-              id="user_phone"
-              required
-              placeholder="Phone"
-              pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
-              title="Phone number should be like +38(044)555-55-55"
-            />
-          </div>
-          <label class="modal-form__label" for="user_message"></label>
-          <textarea
-            class="modal-form-message"
-            name="user_message"
-            id="user_message"
-            rows="4"
-            placeholder="Comment"
-          ></textarea>
-        </div>
-
-        <button
-          class="btn btn--with-icon btn--with-bg btn--with-bg-sm"
-          type="submit"
-        >
-          <span class="btn__text">Submit</span>
-        </button>
-      </form>
-    </div>
-    <div class="overlay js-overlay-modal is-hidden"></div>
     <!-- scripts -->
     <!-- modal -->
     <script src="./js/modal.js"></script>
@@ -483,6 +128,14 @@
       type="module"
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script type="module" src="./js/swiper-slider.js"></script>
 
     <!-- scroll animation AOS -->
@@ -493,5 +146,8 @@
     
     <!-- body-no-scroll -->
     <script type="module" src="./js/body-no-scroll.js"></script>
+    <!-- up arrow -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="./js/uparrow.js"></script>
   </body>
 </html>

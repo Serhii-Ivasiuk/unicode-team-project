@@ -1,8 +1,8 @@
 .modal-ingredients {
   padding: 28px 20px;
   overflow-y: auto;
-  height: 100vh;
-  @media screen and (max-width: 479px) {
+  height: 600px;
+  @media screen and (max-width: 479.98px) {
     padding-top: 60px;
   }
   @media screen and (min-width: 480px) {
@@ -11,6 +11,10 @@
   @media screen and (min-width: 768px) {
     padding: 32px 40px;
     max-width: 575px;
+    max-height: 996px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: auto;
   }
 }
 .modal__title {
@@ -146,6 +150,7 @@
   line-height: 140%;
   color: var(--text-main-clr);
   padding: 11px 11px;
+  resize: none;
 
   @media screen and (min-width: 480px) {
     width: 315px;
