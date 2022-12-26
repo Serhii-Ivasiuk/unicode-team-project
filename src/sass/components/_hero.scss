@@ -108,7 +108,7 @@
 
 .hero__img-cone {
   position: absolute;
-  right: 20%;
+  right: 23%;
   bottom: 0;
   z-index: 2;
   animation-name: scale;
@@ -116,21 +116,22 @@
   animation-timing-function: ease;
   animation-iteration-count: 1;
   transform-origin: bottom center;
+  width: 50%;
 
-  @media screen and (min-width: 350px) {
-    right: 25%;
-  }
+  // @media screen and (min-width: 350px) {
+  //   right: 25%;
+  // }
 
-  @media screen and (min-width: 400px) {
-    right: 30%;
-  }
+  // @media screen and (min-width: 400px) {
+  //   right: 30%;
+  // }
 
-  @media screen and (min-width: 450px) {
-    right: 35%;
-  }
+  // @media screen and (min-width: 450px) {
+  //   right: 35%;
+  // }
 
-  @media screen and (min-width: 480px) {
-      right: 160px;
+  @media screen and (min-width: 321px) {
+      // width: 50%;
     }
 
   @media screen and (min-width: 768px) {
