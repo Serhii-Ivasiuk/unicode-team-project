@@ -373,7 +373,5 @@ inpur:focus {
 // mobile-devices scroll add
 .modal {
   overflow-y: auto;
-  @media screen and (max-width: 479.98px) {
-    max-height: 95vh;
-  }
+  max-height: 95vh;
 }
