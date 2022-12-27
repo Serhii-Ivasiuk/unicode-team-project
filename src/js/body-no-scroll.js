@@ -92,8 +92,14 @@
       '[data-modal-open-ingredients-3]'
     ),
 
-    closeBtnModalIngredients: document.querySelector(
-      '[data-modal-close-ingredients]'
+    closeBtnModalIngredients1: document.querySelector(
+      '[data-modal-close-ingredients-1]'
+    ),
+    closeBtnModalIngredients2: document.querySelector(
+      '[data-modal-close-ingredients-2]'
+    ),
+    closeBtnModalIngredients3: document.querySelector(
+      '[data-modal-close-ingredients-3]'
     ),
   };
 
@@ -101,7 +107,9 @@
   refs.openBtnModalIngredients2.addEventListener('click', toggleModal);
   refs.openBtnModalIngredients3.addEventListener('click', toggleModal);
 
-  refs.closeBtnModalIngredients.addEventListener('click', toggleModal);
+  refs.closeBtnModalIngredients1.addEventListener('click', toggleModal);
+  refs.closeBtnModalIngredients2.addEventListener('click', toggleModal);
+  refs.closeBtnModalIngredients3.addEventListener('click', toggleModal);
 
   function toggleModal() {
     document.body.classList.toggle('no-scroll');
