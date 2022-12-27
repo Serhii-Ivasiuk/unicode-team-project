@@ -19,7 +19,7 @@
   opacity: 0;
   visibility: hidden;
   // /*  Установаем ширину окна  */
-  width: 87vw;
+  // width: 87vw;
   max-width: 568px;
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -372,6 +372,8 @@ inpur:focus {
 
 // mobile-devices scroll add
 .modal {
-  max-height: 95vh;
   overflow-y: auto;
+  @media screen and (max-width: 479.98px) {
+    max-height: 95vh;
+  }
 }
