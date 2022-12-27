@@ -44,6 +44,16 @@
   opacity: 1;
   visibility: visible;
 }
+.modal.active {
+  max-height: 95vh;
+  min-width: 280px;
+  @media screen and (max-width: 479.98px) {
+    max-width: 440px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 568px;
+  }
+}
 
 .modal-form-wrapper__field:placeholder-shown:invalid {
   border-color: #198754;
