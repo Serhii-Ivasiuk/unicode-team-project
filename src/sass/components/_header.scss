@@ -59,11 +59,19 @@
 
 .btn-wrap {
   display: none;
-  padding-bottom: 3px;
-
+  
   @media screen and (min-width: 768px) {
     display: flex;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 3px;
+  }
+}
+
+.btn-header {
+  display: flex;
+  align-items: center;
 }
 
 .menu-toggle {
