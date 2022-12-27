@@ -72,6 +72,34 @@ body {
   pointer-events: none;
 }
 
-.bg-fix {
+.bg__header-hero {
   background-color: var(--bg-main-clr);
+}
+
+
+.bg__about-gallery {
+  @media screen and (max-width: 767.98px) {
+      background-image: linear-gradient(to bottom,
+          var(--bg-main-clr) 88%,
+          transparent 88%);
+    }
+  
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      background-image: linear-gradient(to bottom,
+          var(--bg-main-clr) 1000px,
+          transparent 1000px);
+    }
+  
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(to bottom,
+          var(--bg-main-clr) 1200px,
+          transparent 1200px);
+    }
+}
+
+
+.bg__contacts-footer {
+background-image: linear-gradient(to bottom,
+      transparent 353px,
+      var(--bg-main-clr) 353px);
 }
