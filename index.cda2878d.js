@@ -1,0 +1,2 @@
+$(document).ready((function(){var e=$("#videoplayer").children("iframe").attr("src");$(".open-popup").click((function(r){r.preventDefault(),$("#videoplayer").children("iframe").attr("src",e),$(".popup-bg").fadeIn()})),$(".close-popup").click((function(e){e.preventDefault(),$("#videoplayer").children("iframe").attr("src",""),$(".popup-bg").fadeOut()}))}));
+//# sourceMappingURL=index.cda2878d.js.map
