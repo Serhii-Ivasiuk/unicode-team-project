@@ -19,7 +19,7 @@
   opacity: 0;
   visibility: hidden;
   // /*  Установаем ширину окна  */
-  width: 87vw;
+  // width: 87vw;
   max-width: 568px;
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -43,6 +43,16 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+.modal.active {
+  max-height: 95vh;
+  min-width: 280px;
+  @media screen and (max-width: 479.98px) {
+    max-width: 440px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 568px;
+  }
 }
 
 .modal-form-wrapper__field:placeholder-shown:invalid {
@@ -368,4 +378,10 @@ inpur:focus {
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
   }
+}
+
+// mobile-devices scroll add
+.modal {
+  overflow-y: auto;
+  max-height: 95vh;
 }

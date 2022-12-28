@@ -13,10 +13,10 @@
   position: inherit;
   display: flex;
   align-items: center;
+  padding: 0;
 
   @media screen and (min-width: 768px) {
     margin-right: 32px;
-    padding-bottom: 5px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -52,7 +52,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 100px 20px 64px;
+  padding: 100px 20px 250px;
   background-color: var(--mobile-menu-bg-clr);
   z-index: 999;
   transform: translateX(100%);
