@@ -390,4 +390,15 @@ inpur:focus {
 .modal {
   overflow-y: auto;
   max-height: 95vh;
+
+  &.active {
+    width: calc(100% - 40px);
+    @media screen and (max-width: 767.98px) {
+      max-width: 440px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-height: 98vh;
+    }
+  }
 }

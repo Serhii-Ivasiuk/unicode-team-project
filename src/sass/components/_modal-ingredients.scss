@@ -1,7 +1,7 @@
 .modal-ingredients {
   padding: 28px 20px;
   overflow-y: auto;
-  height: 600px;
+  // height: 600px;
   @media screen and (max-width: 479.98px) {
     padding-top: 60px;
   }
@@ -12,9 +12,6 @@
     padding: 32px 38px;
     max-width: 575px;
     max-height: 996px;
-  }
-  @media screen and (min-width: 1200px) {
-    // height: auto;
   }
 }
 .modal__title {
@@ -186,7 +183,7 @@
     width: 365px;
   }
   @media screen and (min-width: 768px) {
-    width: 488px;
+    width: 100%;
   }
 }
 .ingredients-list__item {
