@@ -1,10 +1,9 @@
 .modal-location {
   padding: 28px;
-  max-width: 280px;
   max-height: 365px;
   @media screen and (min-width: 480px) {
     padding: 30px 44px;
-    max-width: 424px;
+    width: 426px;
     max-height: 412px;
   }
   @media screen and (min-width: 768px) {
