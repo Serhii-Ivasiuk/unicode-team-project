@@ -96,6 +96,7 @@ inpur:focus {
   width: 25px;
   height: 25px;
   fill: #444;
+  -webkit-appearance: none;
 
   @include transition(fill);
 
