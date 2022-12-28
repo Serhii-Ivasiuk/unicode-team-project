@@ -44,7 +44,7 @@ body {
   }
 }
 
-// castom cursor
+// custom cursor
 a,
 button,
 summary::after,
@@ -70,4 +70,27 @@ body {
 .overlay.active {
   overflow-y: auto;
   pointer-events: none;
+}
+
+// custom scrollbar
+
+*::-webkit-scrollbar {
+  width: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fcfcfc;
+  border: 1px solid outset var(--accent-clr);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.2),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  border-radius: 10px;
+  border: 6px solid #fcfcfc;
 }
