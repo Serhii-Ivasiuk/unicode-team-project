@@ -55,6 +55,7 @@
   padding: 100px 20px 250px;
   background-color: var(--mobile-menu-bg-clr);
   z-index: 999;
+  transform-origin: top right;
   transform: translateX(100%) scale(0.7);
   @include transition(transform);
 
