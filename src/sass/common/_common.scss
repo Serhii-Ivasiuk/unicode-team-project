@@ -138,4 +138,9 @@ body::-webkit-scrollbar-thumb {
 
 .overlay::-webkit-scrollbar {
   width: 0px;
+  height: 0px;
+}
+
+.overlay {
+  overflow-x: hidden;
 }
