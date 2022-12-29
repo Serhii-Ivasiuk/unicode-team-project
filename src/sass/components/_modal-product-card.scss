@@ -55,24 +55,24 @@
 }
 .modal-product-card-list__item--ice-cream {
   border: 2px solid #96af8c;
-  &:hover,
-  &:focus {
-    background-color: #96af8c;
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: #96af8c;
+  // }
 }
 .modal-product-card-list__item--ice-coffee {
   border: 2px solid var(--bg-product-two-clr);
-  &:hover,
-  &:focus {
-    background-color: var(--bg-product-two-clr);
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: var(--bg-product-two-clr);
+  // }
 }
 .modal-product-card-list__item--milkshake {
   border: 2px solid var(--bg-product-three-clr);
-  &:hover,
-  &:focus {
-    background-color: var(--bg-product-three-clr);
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: var(--bg-product-three-clr);
+  // }
 }
 .product-card-list__circle {
   width: 132px;
