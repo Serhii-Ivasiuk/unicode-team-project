@@ -27,9 +27,18 @@
     margin-bottom: 32px;
   }
 }
-.modal-location__picture {
-  display: block;
+// .modal-location__picture {
+//   display: block;
+//   margin-bottom: 24px;
+//   @media screen and (min-width: 768px) {
+//     margin-bottom: 32px;
+//   }
+// }
+.modal__iframe {
+  width: 100%;
   margin-bottom: 24px;
+  border-radius: 10px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
   }
