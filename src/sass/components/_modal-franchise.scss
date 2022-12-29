@@ -1,7 +1,7 @@
 .modal-franchise {
   padding: 30px;
   overflow-y: auto;
-  height: 100vh;
+  // height: 100vh;
   @media screen and (max-width: 479.98px) {
     padding-top: 60px;
   }
@@ -41,12 +41,7 @@
   margin-right: auto;
   margin-bottom: 24px;
   text-align: justify;
-  @media screen and (min-width: 480px) {
-    width: 335px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 448px;
-  }
+  max-width: 448px;
 }
 .modal-form-message-fr {
   width: 85%;

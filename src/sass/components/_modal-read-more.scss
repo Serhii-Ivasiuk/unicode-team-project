@@ -2,8 +2,13 @@
   padding: 28px;
   max-width: 280px;
   max-height: 459px;
+  @media screen and (min-width: 480px) {
+    padding: 30px 43px;
+    max-width: 426px;
+    max-height: 449px;
+  }
   @media screen and (min-width: 768px) {
-    padding: 32px 60px;
+    padding: 32px 58px;
     max-width: 568px;
     max-height: 449px;
   }
@@ -26,6 +31,14 @@
 }
 .modal-read-more__iframe {
   margin-bottom: 20px;
+  @media screen and (min-width: 320px) {
+    width: 224px;
+    height: 199px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 336px;
+    height: 205px;
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
     width: 448px;

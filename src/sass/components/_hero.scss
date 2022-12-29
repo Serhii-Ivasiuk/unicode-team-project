@@ -1,14 +1,14 @@
 .hero__section {
-  @include section(50px, 237px);
+  @include section(40px, 237px);
   background-color: var(--bg-main-clr);
   position: relative;
 
   @media screen and (min-width: 768px) {
-    @include section(14px, 176px);
+    @include section(4px, 176px);
   }
 
   @media screen and (min-width: 1200px) {
-    @include section(45px, 332px);
+    @include section(35px, 332px);
   }
 }
 
@@ -20,6 +20,7 @@
 
   &--lg {
     font-size: 34px;
+    line-height: calc(33 / 34);
 
     @media screen and (min-width: 1200px) {
       font-size: 38px;
@@ -108,7 +109,7 @@
 
 .hero__img-cone {
   position: absolute;
-  right: 20%;
+  right: 23%;
   bottom: 0;
   z-index: 2;
   animation-name: scale;
@@ -117,22 +118,10 @@
   animation-iteration-count: 1;
   transform-origin: bottom center;
 
-  @media screen and (min-width: 350px) {
-    right: 25%;
+  @media screen and (max-width: 767.98px) {
+    width: 50%;
   }
-
-  @media screen and (min-width: 400px) {
-    right: 30%;
-  }
-
-  @media screen and (min-width: 450px) {
-    right: 35%;
-  }
-
-  @media screen and (min-width: 480px) {
-      right: 160px;
-    }
-
+  
   @media screen and (min-width: 768px) {
     right: 92px;
   }
