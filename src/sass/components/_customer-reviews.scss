@@ -159,7 +159,11 @@
 .card {
   display: flex;
   flex-direction: column;
-  
+    // margin-bottom: 12px;
+    
+    //   @media screen and (min-width: 768px) {
+    //     margin-bottom: 32px;
+    //   }
 }
 
 .content {
@@ -216,7 +220,6 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.86;
-
   text-align: center;
 
   color: var(--text-main-clr);
@@ -228,7 +231,6 @@
 
 .card-container {
   display: flex;
-  // justify-content: center;
   margin: 0 auto;
 
 }
